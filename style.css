@@ -113,15 +113,17 @@ header {
   position: absolute;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  justify-content: center;
   width: 70%;
-  padding: 10px;
+  height: 80vh;
+  padding: 0 10px;
   margin-left: 15%;
   margin-right: 10%;
 }
 
 .part-above > section {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
