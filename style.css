@@ -17,7 +17,7 @@ header {
 
 .nav {
   width: 70%;
-  padding: 5px;
+  padding: 8px 0;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -37,7 +37,7 @@ header {
 
 /* social media */
 .social-media {
-  width: 4.2%;
+  width: 5%;
   position: fixed;
   top: 30%;
   z-index: 1;
@@ -154,11 +154,11 @@ header {
     rgba(57, 190, 213, 1) 96%
   );
   height: 100vh;
-  width: 70%;
+  width: 80%;
 }
 
 .part-color > * {
-  width: 55%;
+  width: 60%;
   text-align: justify;
   margin-left: auto;
   margin-right: auto;
