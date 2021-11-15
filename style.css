@@ -37,25 +37,22 @@ header {
 
 /* social media */
 .social-media {
-  width: 5%;
   position: fixed;
-  top: 30%;
+  height: 100vh;
+  top: 35%;
   z-index: 1;
 }
 
 .center {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.box {
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .box a {
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,7 +72,7 @@ header {
   content: attr(data-text);
   position: absolute;
   top: 0;
-  left: 65px;
+  left: 35px;
   font-family: cursive;
   border-radius: 50px;
   width: 150px;
@@ -98,8 +95,8 @@ header {
   top: 0;
   left: 0;
   border-radius: 50px;
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   background: #39bed5;
   transform: scale(0);
   transition: all 0.4s;
@@ -154,7 +151,7 @@ header {
     rgba(57, 190, 213, 1) 96%
   );
   height: 100vh;
-  width: 80%;
+  width: 70%;
 }
 
 .part-color > * {
