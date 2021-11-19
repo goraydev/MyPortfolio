@@ -133,11 +133,10 @@ img {
 .container {
   display: flex;
 }
-
 h1 {
   font-family: var(--type-word-web-r);
   font-size: 1.7rem;
-  color: var(--third-color-light);
+  color: var(--second-color-dark);
 }
 
 .occupation {
@@ -150,6 +149,11 @@ h1 {
 }
 
 /* images */
+
+.logo {
+  width: 60px;
+}
+
 .img-1 {
   width: 59%;
   position: absolute;
@@ -170,6 +174,7 @@ h1 {
   top: 10%;
   right: 50%;
 }
+
 .part-color,
 .part-color-contact {
   background: rgb(39, 45, 45);
@@ -315,12 +320,13 @@ h1 {
   margin-top: 5%;
 }
 
-.part-color-contact h4{
+.part-color-contact h4 {
   margin: 0;
 }
 
 .part-color-contact h4,
-p,input {
+p,
+input {
   font-family: var(--type-word-web-r);
 }
 
@@ -382,11 +388,40 @@ textarea:focus {
   opacity: 0.9;
 }
 .footer {
+  background-color: var(--primary-color);
   height: 100vh;
   display: flex;
+  justify-content: center;
   align-items: flex-end;
 }
 
-.bg-diferent {
-  background-color: var(--primary-color);
+.footer .card-about {
+  position: absolute;
+  border: 3px solid red;
+  color: white;
+  width: 85%;
+  padding: 5rem;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+.only-card,
+.only-about {
+  background-color: red;
+  margin: 0 1rem;
+}
+
+.father-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rights {
+  background-color: yellow;
+  color: black;
+}
+
