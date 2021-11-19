@@ -4,11 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mi nombre es Gerson Aguedo Yanac,Goraycode.Soy Front-end developer. Mi especialidad es React JS, también tengo conocimientos en diseño y en SQL">
+    <meta name="description"
+        content="Mi nombre es Gerson Aguedo Yanac,Goraycode.Soy Front-end developer. Mi especialidad es React JS, también tengo conocimientos en diseño y en SQL">
     <title>Goraycode | Gerson Aguedo Yanac</title>
     <link href="fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="fullpage/node_modules/fullpage.js/dist/fullpage.css" />
     <link rel="stylesheet" href="normalize/node_modules/normalize.css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/logoOficial_GorayCode.svg" type="image/x-icon">
 
@@ -32,16 +39,16 @@
     <section class="social-media">
         <div class="box center">
             <a href="https://www.instagram.com/goraycode/" target="_blank" data-text="Instagram">
-                <i class="fab fa-instagram fa-1x"></i>
+                <i class="fab fa-instagram fa-2x"></i>
             </a>
             <a href="https://twitter.com/GorayCode" target="_blank" data-text="Twitter">
-                <i class="fab fa-twitter fa-1x"></i>
+                <i class="fab fa-twitter fa-2x"></i>
             </a>
             <a href="https://www.linkedin.com/in/gerson-aguedo-yanac-aa949b1b5/" target="_blank" data-text="Linkedin">
-                <i class="fab fa-linkedin-in fa-1x"></i>
+                <i class="fab fa-linkedin-in fa-2x"></i>
             </a>
             <a href="https://github.com/goraycode" target="_blank" data-text="Github">
-                <i class="fab fa-github fa-1x"></i>
+                <i class="fab fa-github fa-2x"></i>
             </a>
         </div>
     </section>
@@ -52,7 +59,7 @@
                 <div class="part-color">
                     <section>
                         <h1>HOLA, MI NOMBRE ES AGUEDO YANAC GERSON</h1>
-                        <h2>Soy Front end Developer de Perú</h2>
+                        <h2 class="occupation">Soy Front-end <br> Developer de <br> Perú</h2>
                     </section>
                 </div>
                 <div class="part-black">
@@ -64,10 +71,13 @@
             <div class="container">
                 <div class="part-black">
                 </div>
-                <div class="part-white-history">
+                <div class="part-white-story">
                     <section>
-                        <button>Mis historia</button>
-                        <button>Mis habilidades </button>
+                        <div class="buttons">
+                            <a href="#" class="btn-active">Mi historia</a>
+                            <a href="#">Mis habilidades</a>
+
+                        </div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quibusdam quasi odio voluptates
                             inventore
                             fugiat a quo ipsa error molestias praesentium, deserunt laudantium ipsam recusandae,
@@ -88,6 +98,27 @@
                             totam ipsum fugit maxime saepe ad laudantium quod et fuga, placeat deleniti esse odit? Ex,
                             eos! Delectus, quod!
                         </p>
+                        <article class="skills">
+                            <div class="designer">
+                                <img src="https://img.icons8.com/color/48/000000/adobe-xd.png" class="xd" />
+                                <img src="https://img.icons8.com/color/48/000000/figma--v1.png" />
+                                <img src="https://img.icons8.com/color/48/000000/adobe-illustrator.png" />
+                                <img src="https://img.icons8.com/color/48/000000/adobe-photoshop--v2.png" />
+                            </div>
+                            <div class="web">
+                                <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" />
+                                <img src="https://img.icons8.com/color/48/000000/css3.png" />
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAEMklEQVRoge2asW8cRRTGf2/WuUSO7b0Q4oAEQpAuuSKFK3IJKJgkRiENFUVq/gT+lxQpKYJEEyRiMETIdwUSQjTQYChAMjnHsm/PNuA7bh6FHWHvzszere7sLfJ193Z25/vmvTfvzdjwHOWCpA3tZvyBKJ8AlWPgMwi6FvnwTL392UGjSY8S1UuUVwRAxWBraWNGiCKto+FTHKryJG3LCDG2/EKMylrGlhk10c8MKh2ifmaxM0KsmtJ7xNosx4yQbrdSeiH//HUqwzGz/QIkjXgbOD12RsWwE9eTqbQxmyN7KHOeOCNmIjD49WFniOvJIQ8njVhDz0NYe3xu6uSJ7paHWwYej+ix50llojvrfqLOaHEKEcc+fdQQUacQEXedcwpRc/xFUTBOIapubu4cUdvybGgjRTqHDlHA80jtEB7xqC4DfNHiFBKVILR8iHDnr8cj2V6mLPBxcwqxao591/Kh34sGFxLXkzawO1ZGxbBbfbuduB6464igojwdL6dCWBNxb2e+FgUVWsArY6O0hw2UFYQVkBXE/oKyYqz91Zpo1cHPG/JeIXh6mlEiridnXfbO4+kXMS5u2SPuM/i6X1THL8QHidztiaq7z4KAECPHJ+RfmXAKCXHye8RTeMaBzWb1tYO/BT3nGhfiFMiR0fdbW82p2T5RTdCaWKmpUAMuoWqA6WfjBJ11z+3usyC0a1lpiddfxWA1au3RE/Qwz98P/RIzi2OX1cBVlZdqFLlvU1S5oMpHInwKOIvTsBDYTM3izBEfJwiGVm8Nooy1ejX5DbgH3NOfqLQ3qm9GojcVbg7EOos/FD10j6sw6w7qnjdHvEmgiuk0411SYoc5d7vOGwp/CzRVWQKW4nryQ7paJ42ZZZB66tX+zJWkIoJ1zeX1iAg2abAOvDQo8TyoZT7eThryXl4fJ67QWveJgHBlR6ClKSGqiK/fyUP1WvL1gEMzQiSn0wgKUUdv02nGfyZN+RK1i0bsV9NXtkdSbzrfTZ+1PfMOcAOIHVyKCwFpObbB86jeBblrNSJpVH8W0YfWshRvJcv5YbNP7AFR8nJ8GZgXYV57vCVwIsyloBAVbUluEOlFVS6K8HFnJt5OGvoNyqIaWUyvQbsZX2BvxW90lOsCM3lf/38aG/R8UIhRWkMmwxTIHYQ7rgUQZWW4zx14V/ydLwQKIpTrNiWPS7gJify9zZEjh0tQiKU8lxB5XIJCKnaiNB7J4xIUMnlq/SmwM1JGxbCzz8WLoBCZoyeYBRXug66Oltsg0FUV7gtmQebohUYOdXJqL8dvCPI+oreBa4z+Hwv6wI+ofK7oQ1dD6UPhI+CTxfOnJye71zH2tioLwKsFP7Umwrdq98hXryab+a9kMbKz7BDeKrzqIYzljyAb35+Jza59F+UWcGvf/AXCI3vSLL0wtzmSk+VzlBn/AQ/omKeROx0KAAAAAElFTkSuQmCC">
+
+                                <img src="https://img.icons8.com/color/48/000000/bootstrap.png" />
+                                <img src="https://img.icons8.com/color/48/000000/react-native.png" />
+                            </div>
+                            <div class="databases">
+                                <img src="https://img.icons8.com/color/50/000000/mysql-logo.png" />
+                                <img src="https://img.icons8.com/color/48/000000/microsoft-sql-server.png" />
+                            </div>
+                        </article>
                     </section>
                 </div>
 
@@ -104,63 +135,26 @@
 
                         <article>
                             <h3>Proyecto 1</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sed rerum distinctio
-                                dolore fugit
-                                tenetur
-                                possimus voluptates ipsam repellendus, illo dolorum hic, consequatur nostrum, reiciendis
-                                corrupti
-                                at.
-                                Quod, quibusdam sequi!
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias beatae repellat, amet
-                                tenetur eaque, cupiditate unde repellendus ratione aperiam earum harum accusantium
-                                facere nostrum natus cum dolorem similique. Iste, aliquam!
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, nobis maiores aliquid dolor
-                                fugit officiis facere animi assumenda quos perferendis quam in rem et harum quis
-                                corporis obcaecati fuga eos.
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, laudantium harum sunt
-                                dolorum nobis delectus officiis ipsum facilis autem nulla cum quia asperiores neque
-                                praesentium, eligendi consequuntur nisi? Sapiente, nemo!</p>
+                            <hr>
+                            <img src="img/calculator.png" alt="">
+                            <hr>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolorum atque ex quam laboriosam nihil corporis voluptatum nulla! Aperiam iste vero corporis unde ratione pariatur voluptates ea laborum aliquid cupiditate!
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint quos, qui deserunt neque deleniti laboriosam velit odit eum earum repellendus porro eaque temporibus, tempore excepturi et harum fugit fuga accusamus?
+                            </p>
                         </article>
 
                         <article>
                             <h3>Proyecto 2</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad pariatur debitis
-                                perspiciatis
-                                laudantium
-                                culpa error ex eius, sunt, necessitatibus commodi laboriosam ullam iste perferendis
-                                reprehenderit
-                                magnam
-                                amet vel a laborum.
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam facilis quas, animi nam
-                                corrupti, quia ipsam voluptatibus atque iure modi, recusandae ut quo architecto natus
-                                nihil consectetur sapiente commodi. Ab?
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur nulla doloremque
-                                sed ducimus laudantium quas totam cum eaque? A ea consectetur recusandae unde ipsam sed
-                                dignissimos maiores doloribus incidunt debitis.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium iure tempore itaque
-                                id hic reprehenderit, minima unde architecto saepe doloribus quos eveniet. Fugit
-                                suscipit sit veritatis consectetur nihil minus. Facilis.
+                            <hr>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolorum atque ex quam laboriosam nihil corporis voluptatum nulla! Aperiam iste vero corporis unde ratione pariatur voluptates ea laborum aliquid cupiditate!
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint quos, qui deserunt neque deleniti laboriosam velit odit eum earum repellendus porro eaque temporibus, tempore excepturi et harum fugit fuga accusamus?
                             </p>
                         </article>
                         <article>
                             <h3>Proyecto 3</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tempore ratione illum
-                                magni!
-                                Corrupti
-                                ipsa, amet voluptas illum suscipit quis quisquam, repellendus architecto eveniet
-                                voluptates
-                                natus,
-                                qui
-                                vero ex laboriosam!
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repellat esse minus quo
-                                velit sapiente corporis laudantium atque maiores eum labore, tempora asperiores officia
-                                voluptatibus nostrum architecto, veritatis dolorum deleniti!
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero aperiam laborum ea
-                                optio illo animi eius excepturi incidunt molestias accusantium. Odio unde hic, magni
-                                quas explicabo sapiente nostrum impedit cumque?
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dicta culpa, est
-                                cupiditate, unde temporibus repellendus error ab inventore fugit ipsam saepe mollitia.
-                                Deleniti quas, explicabo earum dolorum beatae vero?
+                            <hr>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolorum atque ex quam laboriosam nihil corporis voluptatum nulla! Aperiam iste vero corporis unde ratione pariatur voluptates ea laborum aliquid cupiditate!
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint quos, qui deserunt neque deleniti laboriosam velit odit eum earum repellendus porro eaque temporibus, tempore excepturi et harum fugit fuga accusamus?
                             </p>
                         </article>
                     </section>
@@ -197,7 +191,7 @@
         </div>
         <div class="section">
             <footer class="container footer bg-diferent">
-                <img src="img/footer.svg" alt="" class="img-4">
+                <img src="img/footer.svg" alt="">
             </footer>
         </div>
     </div>
