@@ -50,6 +50,8 @@ img {
   color: var(--third-color-light);
 }
 
+
+
 /* social media */
 .social-media {
   position: fixed;
@@ -470,7 +472,7 @@ textarea:focus {
   font-family: var(--type-word-web-m);
 }
 
-.only-card figcaption p{
+.only-card figcaption p {
   font-family: var(--type-word-web-r);
   font-size: 0.8rem;
   margin: 0 0 0.4rem 0;
