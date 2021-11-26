@@ -477,12 +477,9 @@ textarea:focus {
 .only-about {
   width: 70%;
   text-align: justify;
-}
-
-.only-about {
   font-family: var(--type-word-web-r);
+  color: var(--second-color-dark);
 }
-
 .only-about h3 {
   text-align: center;
 }
