@@ -212,6 +212,7 @@ h1 {
   width: 30%;
   height: 100vh;
 }
+
 .part-white-story > * {
   width: 55%;
   margin-left: auto;
@@ -230,13 +231,15 @@ h1 {
 
 .part-white-story a {
   text-decoration: none;
-  color: var(--second-color-dark);
+  color: var(--third-color-light);
   font-family: var(--type-word-web-r);
   font-weight: bold;
   margin: 0 0.5rem;
   padding: 0.5rem;
   border-color: var(--primary-color);
   border-radius: 0.8rem;
+  background-color: var(--primary-color);
+  box-shadow: 2px 3px 5px 0 var(--second-color-dark);
 }
 
 .part-white-story a:hover {
@@ -244,14 +247,17 @@ h1 {
   cursor: pointer;
 }
 
-.btn-active {
-  background-color: var(--primary-color);
-  color: var(--third-color-light);
-  box-shadow: 2px 3px 5px 0 var(--second-color-dark);
-}
-
 .part-white-story p {
   font-family: var(--type-word-web-m);
+}
+
+.skills{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills div{
+  margin: 1rem 0 0;
 }
 
 .part-above {
@@ -311,7 +317,7 @@ h1 {
 
 .carousel__elemento {
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(10px);
   margin: 0 1rem;
   height: 100%;
