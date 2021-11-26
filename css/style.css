@@ -253,7 +253,7 @@ h1 {
 
 .skills{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 .skills div{
@@ -403,6 +403,7 @@ input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: var(--type-word-web-r);
 }
 
 .form .name-email {

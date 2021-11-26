@@ -27,3 +27,13 @@
   width: 100%;
   left: 0;
 }
+
+@keyframes rotateY-infinite {
+  0% {
+    transform: rotateY(360deg);
+  }
+}
+
+.skills img {
+  animation: rotateY-infinite 5s ease-in-out infinite;
+}
