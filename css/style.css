@@ -165,6 +165,108 @@ img {
   color: var(--third-color-light);
 }
 
+/* ---------------------------- burger ---------------------------- */
+
+.burger {
+  display: none;
+}
+
+.off-canvas-btn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 999;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.off-canvas-burger {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 998;
+  width: 3rem;
+  height: 0.6rem;
+  background-color: var(--third-color-light);
+  border-radius: 0.25rem;
+  transform: rotate(0deg) translate(0, -1.2rem);
+  transform-origin: top left;
+  transition: transform 0.5s ease;
+}
+
+.off-canvas-burger::before,
+.off-canvas-burger::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.6rem;
+  border-radius: 0.3rem;
+  background-color: var(--third-color-light);
+  transition: transform 0.5s ease;
+}
+
+.off-canvas-burger::before {
+  transform: rotate(0deg) translate(0, -0.9rem);
+  background-color: var(--third-color-light);
+}
+.off-canvas-burger::after {
+  transform: rotate(0deg) translate(0, 0.3rem);
+  background-color: var(--third-color-light);
+}
+
+.off-canvas-btn:checked + .off-canvas-burger {
+  background-color: transparent;
+}
+
+.off-canvas-btn:checked + .off-canvas-burger::before {
+  transform: rotate(45deg) translate(0, 0);
+}
+.off-canvas-btn:checked + .off-canvas-burger::after {
+  transform: rotate(-45deg) translate(0.4rem, -0.5rem);
+}
+
+.off-canvas-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 997;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(1rem);
+  transition: transform 500ms ease-in-out;
+  transform: translate(100%, 0);
+}
+
+.off-canvas-menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 60%;
+}
+
+.off-canvas-link {
+  color: var(--second-color-dark);
+  text-decoration: none;
+  font-size: 2rem;
+  transition: background-color 300ms ease-in;
+}
+
+.off-canvas-btn:checked ~ .off-canvas-menu {
+  transform: translate(0, 0);
+}
+
+.social-media-burger a {
+  text-decoration: none;
+  color: var(--second-color-dark);
+}
+
 /* -------------------------------------------- Fullpage ----------------------------------- */
 /* Container general */
 .container {
@@ -251,7 +353,13 @@ h1 {
 }
 
 /*-------------------------------- Media queria SECTION 1 (inicio) --------------------------*/
-@media screen and (max-width: 23.4375em){
+@media screen and (max-width: 23.4375em) {
+  .nav {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
   #fp-nav {
     display: none;
   }
@@ -263,6 +371,10 @@ h1 {
   }
   .part-color > * {
     width: 90%;
+  }
+
+  .options {
+    visibility: hidden;
   }
 
   .social-media {
@@ -282,6 +394,7 @@ h1 {
     left: 0;
   }
 }
+
 
 .part-white-story > * {
   width: 55%;
@@ -358,7 +471,7 @@ h1 {
     flex-wrap: wrap;
   }
   .skills div {
-    margin: 0;
+    margin: 0.2rem 0;
     padding: 0;
   }
 }
