@@ -6,6 +6,15 @@
   --fourth-color-optional: #413962;
   --type-word-web-m: "Mukta", sans-serif;
   --type-word-web-r: "Roboto Mono", monospace;
+
+  --step--2: clamp(0.91rem, 0.89rem + 0.1vw, 0.96rem);
+  --step--1: clamp(1.09rem, 1.05rem + 0.21vw, 1.2rem);
+  --step-0: clamp(1.31rem, 1.24rem + 0.37vw, 1.5rem);
+  --step-1: clamp(1.58rem, 1.46rem + 0.59vw, 1.88rem);
+  --step-2: clamp(1.89rem, 1.71rem + 0.89vw, 2.34rem);
+  --step-3: clamp(2.27rem, 2.01rem + 1.29vw, 2.93rem);
+  --step-4: clamp(2.72rem, 2.36rem + 1.83vw, 3.66rem);
+  --step-5: clamp(3.27rem, 2.75rem + 2.56vw, 4.58rem);
 }
 
 /* ------------------------ Reset a parte de normalize.css ----------------------------- */
@@ -242,6 +251,37 @@ h1 {
 }
 
 /*-------------------------------- Media queria SECTION 1 (inicio) --------------------------*/
+@media screen and (max-width: 23.4375em){
+  #fp-nav {
+    display: none;
+  }
+  .part-color {
+    width: 100%;
+  }
+  .part-black {
+    width: 0;
+  }
+  .part-color > * {
+    width: 90%;
+  }
+
+  .social-media {
+    visibility: hidden;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  .occupation {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .img-1 {
+    width: 100%;
+    top: 40%;
+    left: 0;
+  }
+}
 
 .part-white-story > * {
   width: 55%;
@@ -291,6 +331,36 @@ h1 {
 
 .skills img {
   animation: rotateY-infinite 10s ease-in-out infinite;
+}
+
+/*-------------------------------- Media queria SECTION 2 (historia, habilidades y herramientas) --------------------------*/
+
+@media screen and (max-width: 30em) {
+  .part-white-story {
+    width: 100%;
+  }
+  .part-white-story > * {
+    width: 100%;
+    margin: 0.2rem 0 0;
+  }
+  .part-white-story p {
+    padding: 1rem;
+    margin: 0;
+  }
+  .img-2 {
+    visibility: hidden;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .skills div {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .part-above {
@@ -419,6 +489,46 @@ h1 {
   opacity: 1;
 }
 
+/*-------------------------------- Media queria SECTION 3 (Proyectos) --------------------------*/
+@media screen and (max-width: 23.4375em) {
+  .part-above {
+    display: flex;
+    width: 90%;
+    margin: 0 0 0 1rem;
+  }
+  .part-above h2 {
+    margin: 1rem 0;
+  }
+
+  .carousel__contenedor {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .carousel__elemento {
+    margin: 0 0.1rem;
+    padding: 0.3rem;
+  }
+
+  .carousel__elemento h3 {
+    font-size: 0.7rem;
+  }
+
+  .carousel__elemento p {
+    margin: 0;
+    font-size: 0.7rem;
+  }
+
+  .carousel__elemento hr {
+    width: 100%;
+  }
+
+  .links img {
+    width: 25%;
+  }
+}
+
 .part-color-contact > * {
   width: 60%;
   text-align: justify;
@@ -493,6 +603,53 @@ textarea:focus {
 .submit:hover {
   cursor: pointer;
   opacity: 0.9;
+}
+
+/*-------------------------------- Media queria SECTION 4 (contacto) --------------------------*/
+@media screen and (max-width: 23.4375em) {
+  .part-color-contact {
+    width: 100%;
+  }
+  .part-color-contact > * {
+    width: 100%;
+  }
+
+  .form p {
+    padding: 0 1rem;
+  }
+
+  .form .name-email {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .name-email > * {
+    width: 90%;
+    margin: 0.5rem 0;
+  }
+
+  .form textarea {
+    width: 90%;
+    height: 10rem;
+    margin: 0.5rem 0;
+    z-index: 1;
+  }
+
+  .submit {
+    background-color: var(--second-color-dark);
+    color: var(--third-color-light);
+    width: 50%;
+    border-radius: 10px;
+    height: 3rem;
+  }
+
+  .img-3 {
+    visibility: hidden;
+  }
 }
 
 /*---------------- Footer ---------------------- */
@@ -606,4 +763,48 @@ textarea:focus {
 .imagec:hover figcaption:before,
 .imagec:hover figcaption:after {
   width: 200%;
+}
+
+/*-------------------------------- Media queria SECTION 5 (plus y CV) --------------------------*/
+@media screen and (max-width: 23.4375em) {
+  .footer {
+    background-color: var(--primary-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .footer .card-about {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .father-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .only-card {
+    display: none;
+  }
+
+  .only-about {
+    margin: 0;
+    top: 0;
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .footer-rights {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 75%;
+    background-color: var(--second-color-dark);
+    font-size: var(--type-word-web-r);
+  }
+  .rights i {
+    padding: 0 0 0.2rem;
+  }
 }
