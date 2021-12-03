@@ -6,21 +6,13 @@
   --fourth-color-optional: #413962;
   --type-word-web-m: "Mukta", sans-serif;
   --type-word-web-r: "Roboto Mono", monospace;
-
-  --step--2: clamp(0.91rem, 0.89rem + 0.1vw, 0.96rem);
-  --step--1: clamp(1.09rem, 1.05rem + 0.21vw, 1.2rem);
-  --step-0: clamp(1.31rem, 1.24rem + 0.37vw, 1.5rem);
-  --step-1: clamp(1.58rem, 1.46rem + 0.59vw, 1.88rem);
-  --step-2: clamp(1.89rem, 1.71rem + 0.89vw, 2.34rem);
-  --step-3: clamp(2.27rem, 2.01rem + 1.29vw, 2.93rem);
-  --step-4: clamp(2.72rem, 2.36rem + 1.83vw, 3.66rem);
-  --step-5: clamp(3.27rem, 2.75rem + 2.56vw, 4.58rem);
 }
 
 /* ------------------------ Reset a parte de normalize.css ----------------------------- */
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *,
 *::before,
@@ -28,9 +20,14 @@ html {
   box-sizing: inherit;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 header {
   background-color: var(--second-color-dark);
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 1;
   font-family: var(--type-word-web-m);
@@ -269,10 +266,24 @@ img {
 
 /* -------------------------------------------- Fullpage ----------------------------------- */
 /* Container general */
+.fullpage {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: block mandatory;
+}
+
+.section {
+  width: 100%;
+  height: inherit;
+  scroll-snap-align: center;
+}
+
 .container {
   display: flex;
   position: relative;
 }
+
 h1 {
   font-family: var(--type-word-web-r);
   font-size: 1.7rem;
@@ -296,6 +307,7 @@ h1 {
 .img-1 {
   width: 59%;
   position: absolute;
+  top: 10%;
   left: 40%;
 }
 
@@ -310,7 +322,7 @@ h1 {
 .img-3 {
   width: 38%;
   position: absolute;
-  top: 10%;
+  top: 20%;
   right: 50%;
 }
 
@@ -341,9 +353,7 @@ h1 {
 .part-color > * {
   width: 60%;
   text-align: justify;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 18%;
+  margin: 25% auto 0;
 }
 
 .part-black {
@@ -353,7 +363,7 @@ h1 {
 }
 
 /*-------------------------------- Media queria SECTION 1 (inicio) --------------------------*/
-@media screen and (max-width: 23.4375em) {
+@media screen and (max-width: 62em) {
   .nav {
     display: none;
   }
@@ -365,6 +375,7 @@ h1 {
   }
   .part-color {
     width: 100%;
+    position: absolute;
   }
   .part-black {
     width: 0;
@@ -385,8 +396,8 @@ h1 {
     font-size: 2rem;
   }
   .occupation {
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 3rem;
+    line-height: 3rem;
   }
   .img-1 {
     width: 100%;
@@ -395,6 +406,26 @@ h1 {
   }
 }
 
+@media screen and (max-width: 48em) {
+  h1 {
+    text-align: left;
+    font-size: 3rem;
+  }
+  .occupation {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+@media screen and (max-width: 35em) {
+  h1 {
+    font-size: 2rem;
+  }
+  .occupation {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
 
 .part-white-story > * {
   width: 55%;
@@ -448,13 +479,13 @@ h1 {
 
 /*-------------------------------- Media queria SECTION 2 (historia, habilidades y herramientas) --------------------------*/
 
-@media screen and (max-width: 30em) {
+@media screen and (max-width: 62em) {
   .part-white-story {
     width: 100%;
   }
   .part-white-story > * {
-    width: 100%;
-    margin: 0.2rem 0 0;
+    width: 90%;
+    margin: 1rem auto;
   }
   .part-white-story p {
     padding: 1rem;
@@ -473,6 +504,71 @@ h1 {
   .skills div {
     margin: 0.2rem 0;
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .part-white-story {
+    width: 70%;
+  }
+  .part-black {
+    width: 30%;
+  }
+  .img-2 {
+    width: 60%;
+    top: 55%;
+    left: 35%;
+    visibility: visible;
+  }
+  .skills div {
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 35em) {
+  .part-white-story {
+    width: 100%;
+  }
+  .part-black {
+    width: 0;
+  }
+  .img-2 {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 30em) {
+  .part-white-story {
+    width: 100%;
+  }
+  .part-black {
+    width: 0;
+  }
+  .img-2 {
+    visibility: hidden;
+  }
+
+  .skills div {
+    margin: 0.3rem 0 0;
+  }
+}
+
+@media screen and (max-width: 23em) {
+  .part-white-story {
+    width: 100%;
+  }
+  .part-black {
+    width: 0;
+  }
+  .img-2 {
+    visibility: hidden;
+  }
+  .part-white-story > * {
+    width: 100%;
+    margin: 0.1rem auto;
+  }
+  .skills div {
+    margin: 0;
   }
 }
 
@@ -603,7 +699,7 @@ h1 {
 }
 
 /*-------------------------------- Media queria SECTION 3 (Proyectos) --------------------------*/
-@media screen and (max-width: 23.4375em) {
+@media screen and (max-width: 75em) {
   .part-above {
     display: flex;
     width: 90%;
@@ -647,7 +743,7 @@ h1 {
   text-align: justify;
   margin-left: auto;
   margin-right: 8%;
-  margin-top: 5%;
+  margin-top: 15%;
 }
 
 .part-color-contact h4 {
@@ -719,7 +815,7 @@ textarea:focus {
 }
 
 /*-------------------------------- Media queria SECTION 4 (contacto) --------------------------*/
-@media screen and (max-width: 23.4375em) {
+@media screen and (max-width: 75em) {
   .part-color-contact {
     width: 100%;
   }
@@ -879,7 +975,7 @@ textarea:focus {
 }
 
 /*-------------------------------- Media queria SECTION 5 (plus y CV) --------------------------*/
-@media screen and (max-width: 23.4375em) {
+@media screen and (max-width: 75em) {
   .footer {
     background-color: var(--primary-color);
     height: 100vh;
