@@ -52,6 +52,32 @@ img {
   color: var(--third-color-light);
 }
 
+.options a {
+  position: relative;
+}
+
+.options a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  display: flex;
+  background-color: var(--primary-color);
+  left: 40%;
+  height: 0.25rem;
+  transition: width 0.5s ease, left 0.5s ease, right 0.5s ease;
+}
+
+.options a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+@keyframes rotateY-infinite {
+  0% {
+    transform: rotateY(360deg);
+  }
+}
+
 /*-------------------------------------------- Efectos de social media -------------------------------*/
 .social-media {
   position: fixed;
@@ -215,15 +241,7 @@ h1 {
   height: 100vh;
 }
 
-
 /*-------------------------------- Media queria SECTION 1 (inicio) --------------------------*/
-
-
-
-
-
-
-
 
 .part-white-story > * {
   width: 55%;
@@ -269,6 +287,10 @@ h1 {
   margin: 0.5rem 0 0;
   display: flex;
   flex-wrap: wrap;
+}
+
+.skills img {
+  animation: rotateY-infinite 10s ease-in-out infinite;
 }
 
 .part-above {
@@ -335,6 +357,12 @@ h1 {
   padding: 1rem;
   border-radius: 2rem;
   font-family: var(--type-word-web-r);
+  transition: transform 1s ease-in-out;
+}
+
+.carousel__elemento:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  transform: perspective(20rem) translateZ(-0.5rem);
 }
 
 .carousel__elemento h3 {
