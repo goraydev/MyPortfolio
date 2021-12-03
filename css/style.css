@@ -1,4 +1,4 @@
-/*Guardando los colores en variables */
+/*----------------- Guardando los colores y la tipografia en variables----------------- */
 :root {
   --primary-color: #39bed5;
   --second-color-dark: #272d2d;
@@ -7,6 +7,8 @@
   --type-word-web-m: "Mukta", sans-serif;
   --type-word-web-r: "Roboto Mono", monospace;
 }
+
+/* ------------------------ Reset a parte de normalize.css ----------------------------- */
 
 html {
   box-sizing: border-box;
@@ -32,7 +34,7 @@ img {
 
 .nav {
   width: 70%;
-  padding: 5px 0;
+  padding: 0.5rem 0 0;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -46,11 +48,11 @@ img {
 }
 .options a {
   text-decoration: none;
-  padding: 10px;
+  padding: 1rem;
   color: var(--third-color-light);
 }
 
-/* social media */
+/*-------------------------------------------- Efectos de social media -------------------------------*/
 .social-media {
   position: fixed;
   height: 100vh;
@@ -128,10 +130,11 @@ img {
   color: var(--third-color-light);
 }
 
-/* ----------------------------fullpage----------------------------- */
-/* container */
+/* -------------------------------------------- Fullpage ----------------------------------- */
+/* Container general */
 .container {
   display: flex;
+  position: relative;
 }
 h1 {
   font-family: var(--type-word-web-r);
@@ -149,9 +152,8 @@ h1 {
 }
 
 /* images */
-
 .logo {
-  width: 60px;
+  width: 4rem;
 }
 
 .img-1 {
@@ -213,6 +215,16 @@ h1 {
   height: 100vh;
 }
 
+
+/*-------------------------------- Media queria SECTION 1 (inicio) --------------------------*/
+
+
+
+
+
+
+
+
 .part-white-story > * {
   width: 55%;
   margin-left: auto;
@@ -240,24 +252,23 @@ h1 {
   border-radius: 0.8rem;
   background-color: var(--primary-color);
   box-shadow: 2px 3px 5px 0 var(--second-color-dark);
-}
-
-.part-white-story a:hover {
-  opacity: 0.7;
-  cursor: pointer;
+  cursor: none;
 }
 
 .part-white-story p {
   font-family: var(--type-word-web-m);
 }
 
-.skills{
+.skills {
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
   align-items: center;
 }
-.skills div{
-  margin: 1rem 0 0;
+.skills div {
+  margin: 0.5rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .part-above {
@@ -267,7 +278,7 @@ h1 {
   justify-content: center;
   width: 70%;
   height: 85vh;
-  padding: 0 10px;
+  padding: 0 0.5rem;
   margin-left: 15%;
   margin-right: 10%;
 }
@@ -415,7 +426,7 @@ input {
 
 .name-email > * {
   width: 48%;
-  padding: 10px;
+  padding: 0.7rem;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -424,9 +435,9 @@ input {
 .form textarea {
   width: 100%;
   border-radius: 10px;
-  padding: 10px;
-  height: 200px;
-  margin: 10px 0;
+  padding: 0.7rem;
+  height: 15rem;
+  margin: 1rem 0;
   background: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -449,8 +460,7 @@ textarea:focus {
   color: var(--third-color-light);
   width: 25%;
   border-radius: 10px;
-  padding: 10px;
-  height: 50px;
+  height: 3rem;
 }
 .submit:hover {
   cursor: pointer;
@@ -500,8 +510,8 @@ textarea:focus {
 .imagec {
   font-family: "Raleway", Arial, sans-serif;
   position: relative;
-  margin: 10px;
-  width: 310px;
+  margin: 1rem;
+  width: 20rem;
   overflow: hidden;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.3);
@@ -518,8 +528,8 @@ textarea:focus {
 .only-card figcaption {
   position: absolute;
   top: 50%;
-  left: 30px;
-  right: 30px;
+  left: 3rem;
+  right: 1rem;
   transform-origin: center 0;
   transform: rotate(0deg) translateY(-50%) scale(1);
 }
@@ -569,5 +579,3 @@ textarea:focus {
 .imagec:hover figcaption:after {
   width: 200%;
 }
-
-/* Media querys */
