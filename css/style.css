@@ -21,7 +21,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 header {
@@ -370,12 +370,8 @@ h1 {
   .burger {
     display: block;
   }
-  #fp-nav {
-    display: none;
-  }
   .part-color {
     width: 100%;
-    position: absolute;
   }
   .part-black {
     width: 0;
@@ -393,27 +389,31 @@ h1 {
   }
 
   h1 {
-    font-size: 2rem;
+    text-align: left;
+    font-size: 4rem;
   }
   .occupation {
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 5rem;
+    line-height: 4rem;
   }
   .img-1 {
     width: 100%;
-    top: 40%;
+    top: 45%;
     left: 0;
+    filter: drop-shadow(0.5rem 0 0 var(--second-color-dark));
   }
 }
 
 @media screen and (max-width: 48em) {
   h1 {
-    text-align: left;
     font-size: 3rem;
   }
   .occupation {
     font-size: 4rem;
     line-height: 4rem;
+  }
+  .img-1 {
+    top: 40%;
   }
 }
 
@@ -424,6 +424,16 @@ h1 {
   .occupation {
     font-size: 3rem;
     line-height: 3rem;
+  }
+}
+
+@media screen and (max-width: 18em) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .occupation {
+    font-size: 2rem;
+    line-height: 2rem;
   }
 }
 
@@ -481,7 +491,10 @@ h1 {
 
 @media screen and (max-width: 62em) {
   .part-white-story {
-    width: 100%;
+    width: 70%;
+  }
+  .part-black {
+    width: 30%;
   }
   .part-white-story > * {
     width: 90%;
@@ -492,9 +505,11 @@ h1 {
     margin: 0;
   }
   .img-2 {
-    visibility: hidden;
+    width: 60%;
+    top: 45%;
+    left: 35%;
+    visibility: visible;
   }
-
   .skills {
     display: flex;
     flex-direction: row;
@@ -502,7 +517,7 @@ h1 {
     flex-wrap: wrap;
   }
   .skills div {
-    margin: 0.2rem 0;
+    margin: 1rem 0;
     padding: 0;
   }
 }
@@ -514,14 +529,12 @@ h1 {
   .part-black {
     width: 30%;
   }
-  .img-2 {
-    width: 60%;
-    top: 55%;
-    left: 35%;
-    visibility: visible;
-  }
   .skills div {
     margin: 1rem 0;
+  }
+  .img-2 {
+    top: 55%;
+    left: 35%;
   }
 }
 
@@ -553,22 +566,17 @@ h1 {
   }
 }
 
-@media screen and (max-width: 23em) {
-  .part-white-story {
-    width: 100%;
-  }
-  .part-black {
-    width: 0;
-  }
-  .img-2 {
-    visibility: hidden;
-  }
+@media screen and (max-width: 18em) {
   .part-white-story > * {
     width: 100%;
-    margin: 0.1rem auto;
+    margin: 0.2rem 0;
   }
-  .skills div {
-    margin: 0;
+
+  .part-white-story p {
+    font-size: 0.9rem;
+  }
+  .buttons a {
+    font-size: 0.8rem;
   }
 }
 
@@ -699,10 +707,9 @@ h1 {
 }
 
 /*-------------------------------- Media queria SECTION 3 (Proyectos) --------------------------*/
-@media screen and (max-width: 75em) {
+@media screen and (max-width: 62em) {
   .part-above {
-    display: flex;
-    width: 90%;
+    width: 88%;
     margin: 0 0 0 1rem;
   }
   .part-above h2 {
@@ -711,28 +718,27 @@ h1 {
 
   .carousel__contenedor {
     width: 100%;
+    left: 3%;
     margin: 0;
     padding: 0;
   }
-
   .carousel__elemento {
-    margin: 0 0.1rem;
-    padding: 0.3rem;
+    margin: 0 1rem;
+    padding: 1rem;
   }
 
   .carousel__elemento h3 {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 
   .carousel__elemento p {
     margin: 0;
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 
   .carousel__elemento hr {
     width: 100%;
   }
-
   .links img {
     width: 25%;
   }
@@ -815,16 +821,24 @@ textarea:focus {
 }
 
 /*-------------------------------- Media queria SECTION 4 (contacto) --------------------------*/
-@media screen and (max-width: 75em) {
+@media screen and (max-width: 62em) {
   .part-color-contact {
-    width: 100%;
+    width: 70%;
+    position: relative;
+  }
+  .part-black {
+    width: 30%;
   }
   .part-color-contact > * {
     width: 100%;
   }
+  .form {
+    position: absolute;
+    top: 30%;
+  }
 
   .form p {
-    padding: 0 1rem;
+    padding: 0 2rem;
   }
 
   .form .name-email {
@@ -851,13 +865,60 @@ textarea:focus {
   .submit {
     background-color: var(--second-color-dark);
     color: var(--third-color-light);
-    width: 50%;
+    width: 30%;
     border-radius: 10px;
     height: 3rem;
   }
 
   .img-3 {
+    width: 60%;
+    left: 25%;
+    top: 1%;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .form {
+    top: 30%;
+  }
+  .img-3 {
+    width: 50%;
+    left: 25%;
+    top: 1%;
+  }
+}
+
+@media screen and (max-width: 35em) {
+  .part-color-contact {
+    width: 100%;
+    position: relative;
+  }
+  .part-black {
+    width: 0;
+  }
+  .img-3 {
     visibility: hidden;
+  }
+  .form {
+    top: 10%;
+  }
+  .submit {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 18em) {
+  .form p {
+    padding: 0 1rem;
+  }
+  img {
+    display: none;
+  }
+  .form {
+    top: 1%;
+  }
+  .submit {
+    width: 50%;
   }
 }
 
