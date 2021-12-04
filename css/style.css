@@ -370,8 +370,12 @@ h1 {
   .burger {
     display: block;
   }
+  #fp-nav {
+    display: none;
+  }
   .part-color {
     width: 100%;
+    position: absolute;
   }
   .part-black {
     width: 0;
@@ -389,8 +393,7 @@ h1 {
   }
 
   h1 {
-    text-align: left;
-    font-size: 4rem;
+    font-size: 2rem;
   }
   .occupation {
     font-size: 5rem;
@@ -407,6 +410,10 @@ h1 {
 @media screen and (max-width: 48em) {
   h1 {
     font-size: 3rem;
+  }
+  .occupation {
+    font-size: 4rem;
+    line-height: 4rem;
   }
   .occupation {
     font-size: 4rem;
@@ -429,7 +436,7 @@ h1 {
 
 @media screen and (max-width: 18em) {
   h1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .occupation {
     font-size: 2rem;
@@ -523,18 +530,14 @@ h1 {
 }
 
 @media screen and (max-width: 48em) {
-  .part-white-story {
-    width: 70%;
-  }
-  .part-black {
-    width: 30%;
+  .img-2 {
+    width: 60%;
+    top: 55%;
+    left: 35%;
+    visibility: visible;
   }
   .skills div {
     margin: 1rem 0;
-  }
-  .img-2 {
-    top: 55%;
-    left: 35%;
   }
 }
 
@@ -707,7 +710,7 @@ h1 {
 }
 
 /*-------------------------------- Media queria SECTION 3 (Proyectos) --------------------------*/
-@media screen and (max-width: 62em) {
+@media screen and (max-width: 75em) {
   .part-above {
     width: 88%;
     margin: 0 0 0 1rem;
@@ -911,7 +914,7 @@ textarea:focus {
   .form p {
     padding: 0 1rem;
   }
-  img {
+  .img-3 {
     display: none;
   }
   .form {

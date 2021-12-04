@@ -1,6 +1,6 @@
 /* Typing animation */
 window.onload = function () {
-    console.log("loaded")
+    console.log("loaded");
     var typed = new Typed('#typed', {
         strings: ["-Hola `<i class='far fa-hand-peace'></i>`",
             "-Soy Aguedo Yanac Gerson", "-Puedes decirme Goraycode",
