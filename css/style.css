@@ -1110,6 +1110,9 @@ textarea:focus {
     padding: 0;
     margin: 1rem 0;
   }
+  .only-about{
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 35em) {
@@ -1152,9 +1155,9 @@ textarea:focus {
 }
 
 @media screen and (max-width: 20em) {
-  .footer-rights {
+ /*  .footer-rights {
     display: none;
-  }
+  } */
   .only-about {
     font-size: 0.9rem;
   }
