@@ -276,7 +276,7 @@ img {
 .section {
   width: 100%;
   height: inherit;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
 }
 
 .container {
@@ -363,6 +363,8 @@ h1 {
 }
 
 /*-------------------------------- Media queria SECTION 1 (inicio) --------------------------*/
+
+
 @media screen and (max-width: 62em) {
   .nav {
     display: none;
@@ -431,6 +433,9 @@ h1 {
   .occupation {
     font-size: 3rem;
     line-height: 3rem;
+  }
+  .img-1 {
+    top: 45%;
   }
 }
 
@@ -544,6 +549,10 @@ h1 {
 @media screen and (max-width: 35em) {
   .part-white-story {
     width: 100%;
+  }
+  .part-white-story > * {
+    width: 100%;
+    margin: 0.4rem auto;
   }
   .part-black {
     width: 0;
@@ -710,7 +719,7 @@ h1 {
 }
 
 /*-------------------------------- Media queria SECTION 3 (Proyectos) --------------------------*/
-@media screen and (max-width: 75em) {
+@media screen and (max-width: 62em) {
   .part-above {
     width: 88%;
     margin: 0 0 0 1rem;
@@ -903,7 +912,7 @@ textarea:focus {
     visibility: hidden;
   }
   .form {
-    top: 10%;
+    top: 5%;
   }
   .submit {
     width: 40%;
@@ -1039,13 +1048,14 @@ textarea:focus {
 }
 
 /*-------------------------------- Media queria SECTION 5 (plus y CV) --------------------------*/
-@media screen and (max-width: 75em) {
+@media screen and (max-width: 62em) {
   .footer {
     background-color: var(--primary-color);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    position: relative;
   }
 
   .footer .card-about {
@@ -1057,12 +1067,52 @@ textarea:focus {
   .father-card {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
   }
-  .only-card {
-    display: none;
+  .imagec {
+    margin: 1rem auto 0;
   }
 
+  .only-about {
+    margin: 0;
+    top: 0;
+    width: 80%;
+    padding: 0 1rem;
+  }
+  .footer-rights {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 80%;
+    background-color: var(--second-color-dark);
+    border-radius: 3rem 3rem;
+  }
+  .svg-footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 48em) {
+  .rights {
+    display: flex;
+    flex-direction: column;
+  }
+  .rights p {
+    padding: 0;
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 35em) {
+  figcaption {
+    display: none;
+  }
+  .imagec {
+    width: 20%;
+    border-radius: 50%;
+  }
   .only-about {
     margin: 0;
     top: 0;
@@ -1070,14 +1120,26 @@ textarea:focus {
     padding: 0 1rem;
   }
   .footer-rights {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 75%;
-    background-color: var(--second-color-dark);
-    font-size: var(--type-word-web-r);
+    font-size: 0.8rem;
   }
-  .rights i {
-    padding: 0 0 0.2rem;
+}
+
+@media screen and (max-width: 24em) {
+  .only-card {
+    display: none;
+  }
+
+  .rights p {
+    margin: 0.5rem 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 20em) {
+  .footer-rights {
+    display: none;
+  }
+  .only-about {
+    font-size: 0.9rem;
   }
 }
