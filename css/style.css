@@ -233,6 +233,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(39, 45, 45, 0.8);
   backdrop-filter: blur(1rem);
   transition: transform 500ms ease-in-out;
   transform: translate(100%, 0);
@@ -244,11 +245,11 @@ img {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  height: 60%;
+  height: 70%;
 }
 
 .off-canvas-link {
-  color: var(--second-color-dark);
+  color: var(--third-color-light);
   text-decoration: none;
   font-size: 2rem;
   transition: background-color 300ms ease-in;
@@ -260,7 +261,7 @@ img {
 
 .social-media-burger a {
   text-decoration: none;
-  color: var(--second-color-dark);
+  color: var(--third-color-light);
 }
 
 /* -------------------------------------------- Fullpage ----------------------------------- */
@@ -460,6 +461,19 @@ h1 {
   }
 }
 
+@media screen and (max-width: 20em) {
+  h1 {
+    font-size: 1rem;
+  }
+  .occupation {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .img-1 {
+    top: 45%;
+  }
+}
+
 @media screen and (max-width: 18em) {
   h1 {
     font-size: 1rem;
@@ -596,6 +610,24 @@ h1 {
 
   .skills div {
     margin: 0.3rem 0 0;
+  }
+
+  .part-white-story p {
+    font-size: 1rem;
+  }
+
+  .buttons a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 20em) {
+  .part-white-story p {
+    font-size: 0.8rem;
+  }
+
+  .buttons a {
+    font-size: 0.8rem;
   }
 }
 
@@ -945,6 +977,16 @@ textarea:focus {
   }
 }
 
+@media screen and (max-width: 25em) {
+  .form p {
+    font-size: 0.8rem;
+    padding: 0 1rem;
+  }
+  .submit {
+    font-size: 0.8rem;
+  }
+}
+
 @media screen and (max-width: 18em) {
   .form p {
     padding: 0 1rem;
@@ -1001,7 +1043,7 @@ textarea:focus {
 
 /* Mi foto */
 .imagec {
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: var(--type-word-web-m);
   position: relative;
   margin: 1rem;
   width: 20rem;
@@ -1135,15 +1177,15 @@ textarea:focus {
 }
 
 @media screen and (max-width: 35em) {
-  .ubication{
+  .ubication {
     visibility: hidden;
   }
   figcaption {
     display: none;
   }
   .imagec {
-    width: 20%;
-    border-radius: 50%;
+    width: 4rem;
+    border-radius: 40%;
   }
   .imagec img {
     opacity: 1;
@@ -1151,7 +1193,7 @@ textarea:focus {
   .only-about {
     margin: 0;
     top: 0;
-    width: 100%;
+    width: 95%;
     padding: 0 1rem;
   }
   .footer-rights {
@@ -1167,7 +1209,7 @@ textarea:focus {
   .only-about {
     margin: 0;
     padding: 0 0.5rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .rights p {
@@ -1181,6 +1223,6 @@ textarea:focus {
     display: none;
   } */
   .only-about {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
