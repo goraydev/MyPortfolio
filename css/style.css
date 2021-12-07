@@ -12,7 +12,6 @@
 
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 *,
 *::before,
@@ -364,12 +363,31 @@ h1 {
 
 /*-------------------------------- Media queria SECTION 1 (inicio) --------------------------*/
 
+@media screen and (max-width: 75em) {
+  .img-1 {
+    width: 50%;
+    position: absolute;
+    top: 15%;
+    left: 49%;
+  }
+}
+
+@media screen and (max-width: 64em) {
+  .img-1 {
+    width: 80%;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+  }
+}
+
 @media screen and (max-width: 62em) {
   .fullpage {
-    scroll-snap-type: none;
+    scroll-snap-type: y proximity;
   }
+
   .section {
-    scroll-snap-align: none;
+    scroll-snap-type: start;
   }
 
   .nav {
@@ -377,9 +395,6 @@ h1 {
   }
   .burger {
     display: block;
-  }
-  #fp-nav {
-    display: none;
   }
   .part-color {
     width: 100%;
@@ -839,6 +854,12 @@ textarea:focus {
 }
 
 /*-------------------------------- Media queria SECTION 4 (contacto) --------------------------*/
+@media screen and (max-width: 75em) {
+  -web .submit {
+    width: 40%;
+  }
+}
+
 @media screen and (max-width: 62em) {
   .part-color-contact {
     width: 70%;
@@ -853,7 +874,6 @@ textarea:focus {
   .form {
     position: absolute;
     top: 30%;
-    z-index: 1;
   }
 
   .form p {
@@ -878,7 +898,6 @@ textarea:focus {
     width: 90%;
     height: 10rem;
     margin: 0.5rem 0;
-    z-index: 1;
   }
 
   .submit {
@@ -1055,7 +1074,7 @@ textarea:focus {
 }
 
 /*-------------------------------- Media queria SECTION 5 (plus y CV) --------------------------*/
-@media screen and (max-width: 62em) {
+@media screen and (max-width: 75em) {
   .footer {
     background-color: var(--primary-color);
     height: 100vh;
@@ -1110,12 +1129,15 @@ textarea:focus {
     padding: 0;
     margin: 1rem 0;
   }
-  .only-about{
+  .only-about {
     width: 90%;
   }
 }
 
 @media screen and (max-width: 35em) {
+  .ubication{
+    visibility: hidden;
+  }
   figcaption {
     display: none;
   }
@@ -1123,7 +1145,7 @@ textarea:focus {
     width: 20%;
     border-radius: 50%;
   }
-  .imagec img{
+  .imagec img {
     opacity: 1;
   }
   .only-about {
@@ -1142,7 +1164,7 @@ textarea:focus {
     display: none;
   }
 
-  .only-about{
+  .only-about {
     margin: 0;
     padding: 0 0.5rem;
     font-size: 0.9rem;
@@ -1155,7 +1177,7 @@ textarea:focus {
 }
 
 @media screen and (max-width: 20em) {
- /*  .footer-rights {
+  /*  .footer-rights {
     display: none;
   } */
   .only-about {
