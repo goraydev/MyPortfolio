@@ -384,11 +384,11 @@ h1 {
 
 @media screen and (max-width: 62em) {
   .fullpage {
-    scroll-snap-type: y proximity;
+    scroll-snap-type: none;
   }
 
   .section {
-    scroll-snap-type: start;
+    scroll-snap-type: end;
   }
 
   .nav {
