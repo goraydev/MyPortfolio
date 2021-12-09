@@ -250,6 +250,7 @@ img {
 
 .off-canvas-link {
   color: var(--third-color-light);
+  font-family: var(--type-word-web-m);
   text-decoration: none;
   font-size: 2rem;
   transition: background-color 300ms ease-in;
@@ -388,7 +389,7 @@ h1 {
   }
 
   .section {
-    scroll-snap-type: end;
+    scroll-snap-type: none;
   }
 
   .nav {
@@ -496,15 +497,11 @@ h1 {
   justify-content: center;
 }
 
-.part-white-story p {
-  text-align: justify;
-}
-
 .part-white-story a {
   text-decoration: none;
   color: var(--third-color-light);
-  font-family: var(--type-word-web-r);
-  font-weight: bold;
+  font-family: var(--type-word-web-m);
+  font-weight: normal;
   margin: 0 0.5rem;
   padding: 0.5rem;
   border-color: var(--primary-color);
@@ -515,7 +512,8 @@ h1 {
 }
 
 .part-white-story p {
-  font-family: var(--type-word-web-m);
+  font-family: var(--type-word-web-r);
+  text-align: justify;
 }
 
 .skills {
@@ -525,7 +523,7 @@ h1 {
   align-items: center;
 }
 .skills div {
-  margin: 0.5rem 0 0;
+  margin: 1rem 0 0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -609,7 +607,7 @@ h1 {
   }
 
   .skills div {
-    margin: 0.3rem 0 0;
+    margin: 1rem 0 0;
   }
 
   .part-white-story p {
@@ -621,9 +619,19 @@ h1 {
   }
 }
 
+@media screen and (max-width:25em) {
+  .part-white-story p{
+    font-size: 0.8rem;
+  }
+  .buttons a{
+    font-size: 0.9rem;
+  }
+  
+}
+
 @media screen and (max-width: 20em) {
   .part-white-story p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   .buttons a {
@@ -638,10 +646,13 @@ h1 {
   }
 
   .part-white-story p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .buttons a {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+  }
+  .skills div {
+    margin: 0.6rem 0 0;
   }
 }
 
@@ -658,7 +669,8 @@ h1 {
 }
 
 .part-above h2 {
-  font-family: var(--type-word-web-r);
+  font-family: var(--type-word-web-m);
+  font-weight: normal;
   margin: 0 2rem 1rem;
 }
 
@@ -821,8 +833,7 @@ h1 {
   margin: 0;
 }
 
-.part-color-contact h4,
-p,
+.part-color-contact p,
 input {
   font-family: var(--type-word-web-r);
 }
@@ -833,6 +844,10 @@ input {
   justify-content: center;
   align-items: center;
   font-family: var(--type-word-web-r);
+}
+.form h4 {
+  font-family: var(--type-word-web-m);
+  font-weight: normal;
 }
 
 .form .name-email {
@@ -854,11 +869,16 @@ input {
   width: 100%;
   border-radius: 10px;
   padding: 0.7rem;
-  height: 15rem;
   margin: 1rem 0;
   background: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
+
+/* .name-email input,
+.form textarea {
+  outline-style: none;
+  border: 0;
+} */
 
 input::placeholder,
 textarea::placeholder {
@@ -887,7 +907,7 @@ textarea:focus {
 
 /*-------------------------------- Media queria SECTION 4 (contacto) --------------------------*/
 @media screen and (max-width: 75em) {
-  -web .submit {
+  .submit {
     width: 40%;
   }
 }
@@ -1177,6 +1197,9 @@ textarea:focus {
 }
 
 @media screen and (max-width: 35em) {
+  #plus {
+    display: none;
+  }
   .ubication {
     visibility: hidden;
   }
