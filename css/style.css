@@ -294,7 +294,7 @@ img {
 
 h1 {
   font-family: var(--type-word-web-r);
-  font-size: 1.7rem;
+  font-size: 2rem;
   color: var(--second-color-dark);
 }
 
@@ -392,7 +392,7 @@ h1 {
 
 @media screen and (max-width: 62em) {
   .fullpage {
-    scroll-snap-type: inline;
+    scroll-snap-type: none;
   }
 
   .section {
@@ -424,9 +424,6 @@ h1 {
     visibility: hidden;
   }
 
-  h1 {
-    font-size: 2rem;
-  }
   .occupation {
     font-size: 5rem;
     line-height: 4rem;
@@ -458,7 +455,7 @@ h1 {
 
 @media screen and (max-width: 35em) {
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .occupation {
     font-size: 3rem;
@@ -482,16 +479,6 @@ h1 {
   }
 }
 
-@media screen and (max-width: 18em) {
-  h1 {
-    font-size: 1rem;
-  }
-  .occupation {
-    font-size: 2rem;
-    line-height: 2rem;
-  }
-}
-
 .part-white-story > * {
   width: 55%;
   margin-left: auto;
@@ -509,6 +496,7 @@ h1 {
   color: var(--third-color-light);
   font-family: var(--type-word-web-m);
   font-weight: normal;
+  font-size: 1.1rem;
   margin: 0 0.5rem;
   padding: 0.5rem;
   border-color: var(--primary-color);
@@ -674,6 +662,7 @@ h1 {
 .carousel h2 {
   font-family: var(--type-word-web-m);
   font-weight: normal;
+  font-size: 1.5rem;
   text-align: center;
   margin: 0;
 }
@@ -886,9 +875,6 @@ h1 {
   margin-top: 15%;
 }
 
-.part-color-contact h4 {
-  margin: 0;
-}
 
 .part-color-contact p,
 input {
@@ -902,9 +888,11 @@ input {
   align-items: center;
   font-family: var(--type-word-web-r);
 }
-.form h4 {
+.form h2 {
+  margin: 0;
   font-family: var(--type-word-web-m);
   font-weight: normal;
+  font-size: 1.5rem;
 }
 
 .form .name-email {
@@ -923,6 +911,7 @@ input {
 }
 
 .form textarea {
+  scrollbar-color: var(--second-color-dark);
   width: 100%;
   border-radius: 10px;
   padding: 0.7rem;
@@ -931,11 +920,10 @@ input {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* .name-email input,
+.name-email input,
 .form textarea {
   outline-style: none;
-  border: 0;
-} */
+}
 
 input::placeholder,
 textarea::placeholder {
@@ -945,8 +933,6 @@ textarea::placeholder {
 
 input:focus,
 textarea:focus {
-  outline-style: none;
-  border: 0;
   caret-color: var(--third-color-light);
 }
 
@@ -1109,8 +1095,11 @@ textarea:focus {
   font-family: var(--type-word-web-r);
   color: var(--second-color-dark);
 }
-.only-about h3 {
+.only-about h2 {
   text-align: center;
+  font-family: var(--type-word-web-m);
+  font-weight: normal;
+  font-size: 1.5rem;
 }
 
 .rights {
@@ -1190,6 +1179,10 @@ textarea:focus {
 .imagec:hover figcaption:before,
 .imagec:hover figcaption:after {
   width: 200%;
+}
+
+.footer-rights {
+  font-family: var(--type-word-web-r);
 }
 
 /*-------------------------------- Media queria SECTION 5 (plus y CV) --------------------------*/
