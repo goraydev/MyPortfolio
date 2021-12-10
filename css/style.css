@@ -785,6 +785,10 @@ h1 {
 
 /*-------------------------------- Media queria SECTION 3 (Proyectos) --------------------------*/
 @media screen and (max-width: 62em) {
+  .carousel__elemento:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: none;
+  }
   .part-above {
     width: 88%;
     margin: 0 0 0 1rem;
