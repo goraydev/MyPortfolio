@@ -19,6 +19,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *,
 *::before,
@@ -270,21 +271,6 @@ img {
 .social-media-burger a {
   text-decoration: none;
   color: var(--third-color-light);
-}
-
-/* -------------------------------------------- Fullpage ----------------------------------- */
-/* Container general */
-.fullpage {
-  width: 100%;
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: block mandatory;
-}
-
-.section {
-  width: 100%;
-  height: inherit;
-  scroll-snap-align: start;
 }
 
 .container {
@@ -815,7 +801,7 @@ h1 {
   .img-card {
     text-align: center;
     width: 90%;
-    height: 8rem;
+    height: 5.5rem;
     object-fit: cover;
     margin: 0;
   }
@@ -828,7 +814,8 @@ h1 {
     font-size: 0.8rem;
   }
   .links img {
-    margin: 0.5rem 0;
+    margin: 0.3rem 0 0;
+    width: 20%;
   }
   .carousel__prev i,
   .carousel__next i {
@@ -838,34 +825,6 @@ h1 {
   }
 }
 
-@media screen and (max-width: 20em) {
-  .carousel__elemento h3 {
-    margin: 0.5rem 0;
-    font-family: var(--type-word-web-r);
-    font-weight: 200;
-    font-size: 0.9rem;
-  }
-
-  .img-card {
-    text-align: center;
-    width: 90%;
-    height: 6rem;
-    object-fit: cover;
-    object-position: 50% 0;
-    margin: 0;
-  }
-
-  .links p {
-    margin: 0;
-    font-family: var(--type-word-web-r);
-    font-weight: 100;
-    padding: 0 0.1rem;
-    font-size: 0.8rem;
-  }
-  .links img {
-    margin: 0.5rem 0;
-  }
-}
 
 .part-color-contact > * {
   width: 60%;
@@ -874,7 +833,6 @@ h1 {
   margin-right: 8%;
   margin-top: 15%;
 }
-
 
 .part-color-contact p,
 input {
@@ -911,7 +869,6 @@ input {
 }
 
 .form textarea {
-  scrollbar-color: var(--second-color-dark);
   width: 100%;
   border-radius: 10px;
   padding: 0.7rem;
@@ -1011,9 +968,6 @@ textarea:focus {
 }
 
 @media screen and (max-width: 48em) {
-  .form {
-    top: 30%;
-  }
   .img-3 {
     width: 50%;
     left: 25%;
@@ -1023,8 +977,9 @@ textarea:focus {
 
 @media screen and (max-width: 35em) {
   .part-color-contact {
+    /* border: 1px solid red; */
     width: 100%;
-    position: relative;
+    height: 210vw;
   }
   .part-black {
     width: 0;
@@ -1033,7 +988,7 @@ textarea:focus {
     visibility: hidden;
   }
   .form {
-    top: 5%;
+    top: 1%;
   }
   .submit {
     width: 40%;
