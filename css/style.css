@@ -191,7 +191,7 @@ img {
   bottom: 1rem;
   right: 1rem;
   z-index: 998;
-  width: 3rem;
+  width: 2.5rem;
   height: 0.6rem;
   background-color: var(--third-color-light);
   border-radius: 0.25rem;
@@ -246,6 +246,7 @@ img {
   transition: transform 500ms ease-in-out;
   transform: translate(100%, 0);
 }
+
 
 .off-canvas-menu-container {
   display: flex;
@@ -824,7 +825,6 @@ h1 {
     cursor: pointer;
   }
 }
-
 
 .part-color-contact > * {
   width: 60%;
