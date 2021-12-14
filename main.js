@@ -1,3 +1,6 @@
+
+
+
 /* Typing animation */
 window.onload = function () {
     console.log("loaded");

@@ -31,6 +31,18 @@ html {
   display: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 header {
   background-color: var(--second-color-dark);
   position: fixed;
@@ -246,7 +258,6 @@ img {
   transition: transform 500ms ease-in-out;
   transform: translate(100%, 0);
 }
-
 
 .off-canvas-menu-container {
   display: flex;
@@ -1060,6 +1071,11 @@ textarea:focus {
 .rights {
   text-align: center;
   color: var(--third-color-light);
+}
+.download-cv {
+  text-decoration: none;
+  color: var(--third-color-light);
+  padding: 0.5rem 2rem;
 }
 
 /* Mi foto */
