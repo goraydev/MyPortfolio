@@ -31,18 +31,6 @@ html {
   display: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 header {
   background-color: var(--second-color-dark);
   position: fixed;
@@ -916,6 +904,7 @@ textarea:focus {
   opacity: 0.9;
 }
 
+
 /*-------------------------------- Media queria SECTION 4 (contacto) --------------------------*/
 @media screen and (max-width: 75em) {
   .submit {
@@ -924,6 +913,19 @@ textarea:focus {
 }
 
 @media screen and (max-width: 62em) {
+  .box-n {
+    position: absolute;
+    top: 0;
+    right: -7%;
+    height: 80px;
+    width: 400px;
+    display: flex;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2rem);
+    border-radius: 5px;
+    z-index: 1;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.09);
+  }
   .part-color-contact {
     width: 70%;
     position: relative;
