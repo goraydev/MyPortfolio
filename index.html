@@ -27,9 +27,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 
 
     <link rel="shortcut icon" href="img/logoOficial_GorayCode.svg" type="image/x-icon">
@@ -41,16 +38,14 @@
 
 <body>
 
-    <header>
-        <nav class="nav" id="nav">
+    <header class="header">
+        <nav class="nav container" id="nav">
             <a href="#inicio"><img src="img/logoOficial_GorayCode_withName.svg" alt="Goraycode Gerson Aguedo Yanac"
                     class="logo"></a>
             <ul id="menu" class="options">
                 <li data-menuanchor="inicio" class="active"><a href="#inicio">Inicio</a></li>
                 <li data-menuanchor="sobre"><a href="#sobre">Sobre mí</a></li>
                 <li data-menuanchor="portfolio"><a href="#portfolio">Portfolio</a></li>
-                <li data-menuanchor="contacto"><a href="#contacto">Contacto</a></li>
-                <li data-menuanchor="plus"><a href="#plus"><i class="fas fa-plus"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -72,305 +67,42 @@
         </div>
     </section>
 
-    <div class="burger">
-        <input type="checkbox" name="" id="" class="off-canvas-btn">
-        <label for="" class="off-canvas-burger"></label>
-        <nav class="off-canvas-menu" id="slideMenu">
-            <div class="off-canvas-menu-container">
-                <a href="#inicio"><img src="img/logoOficial_GorayCode.svg" alt="Goraycode Gerson Aguedo Yanac"
-                        class="logo"></a>
-                <a href="#inicio" class="off-canvas-link">Inicio</a>
-                <a href="#sobre" class="off-canvas-link">Sobre mí</a>
-                <a href="#portfolio" class="off-canvas-link">Portfolio</a>
-                <a href="#contacto" class="off-canvas-link">Contacto</a>
-                <a class="off-canvas-link download-cv" href="assets/cv_AguedoYanacGerson.pdf">Descargar CV</a>
-                <div class="social-media-burger">
-                    <a href="https://www.instagram.com/goraycode/" target="_blank" rel="noopener noreferrer"><i
-                            class="fab fa-instagram  fa-2x"></i></a>
-                    <a href="https://twitter.com/GorayCode" target="_blank" rel="noopener noreferrer"><i
-                            class="fab fa-twitter  fa-2x"></i></a>
-                    <a href="https://www.linkedin.com/in/gerson-aguedo-yanac-aa949b1b5/" target="_blank"
-                        rel="noopener noreferrer"><i class="fab fa-linkedin-in  fa-2x"></i></a>
-                    <a href="https://github.com/goraycode" target="_blank" rel="noopener noreferrer"><i
-                            class="fab fa-github  fa-2x"></i></a>
+    <main class="main">
+        <div class="main__grid container">
+            <section class="main__title">
+                <h1>HOLA, SOY AGUEDO YANAC GERSON</h1>
+                <span class="main__typed" id="typed"></span>
+            </section>
+            <img class="main__img" src="img/home.svg" alt="front-end developer Gerson Aguedo Yanac GorayCode">
+        </div>
+    </main>
+
+    <section class="about">
+        <div class="about__grid container">
+            <img class="about__img" src="img/about.svg" alt="">
+            <div class="about__info">
+                <div class="about__story">
+                    <h2 class="about__heading">Mi historia</h2>
+                    <p class="about__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, expedita! Expedita quos
+                        pariatur odit velit obcaecati inventore qui officiis consectetur ex voluptatem debitis, odio
+                        magni nisi, eligendi, ab impedit quo.
+                    </p>
+                    <a href="#" class="about__cv">Descargar CV</a>
                 </div>
-
-            </div>
-        </nav>
-    </div>
-
-
-
-    <div class="section" id="inicio">
-        <div class="container">
-            <div class="part-color">
-                <section class="welcome">
-                    <div class="contenedor">
-                        <h1>
-                            <span id="typed"></span>
-                        </h1>
-                    </div>
-                    <h2 class="occupation">Soy Front-end <br> Developer de <br> Perú</h2>
-                </section>
-            </div>
-            <div class="part-black">
-            </div>
-            <img src="img/home.svg" alt="front-end developer Gerson Aguedo Yanac GorayCode" class="img-1">
-        </div>
-    </div>
-    <div class="section" id="sobre">
-        <div class="container">
-            <div class="part-black">
-            </div>
-            <div class="part-white-story">
-                <section>
-                    <div class="buttons">
-                        <a href="" class="btn-active">Mi historia</a>
-                    </div>
-                    <div class="container-skills-story">
-                        <article>
-
-                            <p>Mi nombre es Gerson Aguedo Yanac y soy de Perú. Me apasiona el mundo de la
-                                tecnología, sobre todo el aspecto visual y el lado del cliente, por eso me enfoqué
-                                en el desarrollo front end.
-                                <br><br>
-                                Empecé en el mundo de la programación a la edad de 18 años, teniendo como primer
-                                lenguaje de
-                                programación C++, pasando por java y luego de manera autodidacta y reforzando lo
-                                aprendido
-                                en mi universidad aprendí las tecnologías web, en la que ahora quiero
-                                especializarme
-                                <br><br>
-                                He colaborado en proyectos con compañeros de mi universidad y fuera de ella,
-                                también
-                                he
-                                desarrollado sitios y aplicaciones web de manera freelance.
-
-                            </p>
-                        </article>
-                        <div class="buttons">
-                            <a href="" class="btn-active">Mis habilidades y herramientas</a>
-                        </div>
-                        <article class="skills">
-                            <div class="designer">
-                                <img src="https://img.icons8.com/color/48/000000/adobe-xd.png" class="xd" />
-                                <img src="https://img.icons8.com/color/48/000000/figma--v1.png" />
-                                <img src="https://img.icons8.com/color/48/000000/adobe-illustrator.png" />
-                                <img src="https://img.icons8.com/color/48/000000/adobe-photoshop--v2.png" />
-                            </div>
-                            <div class="web">
-                                <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" />
-                                <img src="https://img.icons8.com/color/48/000000/css3.png" />
-                                <img src="https://img.icons8.com/color/48/000000/javascript--v1.png" />
-                                <img src="https://img.icons8.com/color/48/000000/bootstrap.png" />
-                                <img src="https://img.icons8.com/color/48/000000/react-native.png" />
-                            </div>
-                            <div class="databases">
-                                <img src="https://img.icons8.com/color/50/000000/mysql-logo.png" />
-                                <img src="https://img.icons8.com/color/48/000000/microsoft-sql-server.png" />
-                            </div>
-                            <div class="tools">
-                                <img src="https://img.icons8.com/color/48/000000/git.png" />
-                                <img src="https://img.icons8.com/material-sharp/48/000000/github.png" />
-                                <img src="https://img.icons8.com/material-outlined/48/000000/notion--v1.png" />
-                            </div>
-                        </article>
-                    </div>
-                </section>
-            </div>
-
-            <img src="img/about.svg" alt="programador" class="img-2">
-        </div>
-    </div>
-    <div class="section" id="portfolio">
-        <div class="container">
-            <div class="part-color"></div>
-            <div class="part-black"></div>
-
-            <div class="carousel">
-                <h2>Proyectos grupales y freelance</h2>
-                <div class="carousel__body">
-                    <div class="carousel__prev"><i class="fas fa-chevron-left"></i></div>
-                    <div class="carousel__next"><i class="fas fa-chevron-right"></i></div>
-                    <div class="carousel__slider">
-                        <div class="carousel__slider__item">
-                            <div class="item__3d-frame">
-                                <div class="item__3d-frame__box item__3d-frame__box--front">
-                                    <div class="carousel__elemento">
-                                        <h3>Lading page de una funeraria</h3>
-                                        <hr>
-                                        <img src="img/lading_page.png" alt="Lading page de funeraria" class="img-card">
-                                        <hr>
-                                        <div class="links">
-                                            <p>Me encargué del maquetado y subirlo a producción</p>
-                                            <a href=""><img src="https://img.icons8.com/fluency/48/000000/domain.png"
-                                                    alt="sitio web" /></a>
-                                            <a href=""><img src="https://img.icons8.com/color/48/000000/github--v1.png"
-                                                    alt="github" /></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
-                                <div class="item__3d-frame__box item__3d-frame__box--right"></div>
-                            </div>
-                        </div>
-                        <div class="carousel__slider__item">
-                            <div class="item__3d-frame">
-                                <div class="item__3d-frame__box item__3d-frame__box--front">
-                                    <div class="carousel__elemento">
-                                        <h3>Galeria de danzas del Perú</h3>
-                                        <hr>
-                                        <img src="img/art_museum.png" alt="Galeria de fotos" class="img-card">
-                                        <hr>
-                                        <div class="links">
-                                            <p>Proyecto en la que expreso todo el amor a mí país</p>
-                                            <a href=""><img src="https://img.icons8.com/fluency/48/000000/domain.png"
-                                                    alt="sitio web" /></a>
-                                            <a href=""><img src="https://img.icons8.com/color/48/000000/github--v1.png"
-                                                    alt="github" /></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
-                                <div class="item__3d-frame__box item__3d-frame__box--right"></div>
-                            </div>
-                        </div>
-                        <div class="carousel__slider__item">
-                            <div class="item__3d-frame">
-                                <div class="item__3d-frame__box item__3d-frame__box--front">
-                                    <div class="carousel__elemento">
-                                        <h3>Aplicación de delivery</h3>
-                                        <hr>
-                                        <img src="img/delivery.png" alt="Lading page de funeraria" class="img-card">
-                                        <hr>
-                                        <div class="links">
-                                            <p>Me encargué de la interfaz y de las querys en MySQL</p>
-                                            <a href="https://github.com/goraycode/RestauranteSoonMarie"
-                                                target="_blank"><img
-                                                    src="https://img.icons8.com/color/48/000000/github--v1.png"
-                                                    alt="github" /></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
-                                <div class="item__3d-frame__box item__3d-frame__box--right"></div>
-                            </div>
-                        </div>
-                        <div class="carousel__slider__item">
-                            <div class="item__3d-frame">
-                                <div class="item__3d-frame__box item__3d-frame__box--front">
-                                    <div class="carousel__elemento">
-                                        <h3>Sitio web de muebleria</h3>
-                                        <hr>
-                                        <img src="img/shopping-web.png" alt="Lading page de funeraria" class="img-card">
-                                        <hr>
-                                        <div class="links">
-                                            <p>Proyecto realizado con otros compañeros</p>
-                                            <a href="https://github.com/goraycode/Proyecto-grupal---Sitio-web-de-muebler-a"
-                                                target="_blank"><img
-                                                    src="https://img.icons8.com/color/48/000000/github--v1.png"
-                                                    alt="github" /></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
-                                <div class="item__3d-frame__box item__3d-frame__box--right"></div>
-                            </div>
-                        </div>
-                        <div class="carousel__slider__item">
-                            <div class="item__3d-frame">
-                                <div class="item__3d-frame__box item__3d-frame__box--front">
-                                    <div class="carousel__elemento">
-                                        <h3>Calculadora</h3>
-                                        <hr>
-                                        <img src="img/calculator.png" alt="Lading page de funeraria" class="img-card">
-                                        <hr>
-                                        <div class="links">
-                                            <p>Proyecto realizado con HTML, CSS Y JS</p>
-                                            <a href="https://github.com/goraycode/Proyecto-grupal---Sitio-web-de-muebler-a"
-                                                target="_blank"><img
-                                                    src="https://img.icons8.com/color/48/000000/github--v1.png"
-                                                    alt="github" /></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
-                                <div class="item__3d-frame__box item__3d-frame__box--right"></div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="about__skills">
+                    <h2 class="about__heading">Mis habilidades</h2>
+                    <div class="about__containaer"></div>
                 </div>
             </div>
-
         </div>
-    </div>
 
-    <div class="section" id="contacto">
-        <div class="container">
-            <div class="part-black">
-
-            </div>
-            <div class="part-color-contact">
-                <form action="" class="form">
-                    <h2>Contáctame</h2>
-                    <p>Comuniquese conmigo si tiene preguntas o esta considerando trabajar conmigo en algún proyecto</p>
-                    <div class="name-email">
-                        <input type="text" placeholder="Nombre">
-                        <input type="email" placeholder="Email">
-                    </div>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <input type="submit" name="" id="" class="submit showbtn" value="Enviar ahora">
-                </form>
-            </div>
-            <img src="img/contacto.svg" alt="contacto" class="img-3">
-        </div>
-    </div>
+    </section>
 
 
 
-    <div class="section" id="plus">
-        <footer class="container footer">
-            <div class="card-about">
-                <div class="father-card">
-                    <div class="only-card">
-                        <figure class="imagec">
-                            <img src="img/profile.jpg" alt="Gerson Aguedo Yanac Goraycode" />
-                            <figcaption>
-                                <h2>Front-end Developer</h2>
-                                <p>Goraycode - Gerson Aguedo Yanac</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="only-about">
-                        <h2>Sobre mí</h2>
-                        <p>Puedes llamarme GorayCode, esta es mi marca personal en donde reflejo mi aprecio y
-                            gratitud a mi familia, resumiendo toda mi identidad, en la que la <b>G</b> es de mi
-                            nombre Gerson, la <b>o</b> y la <b>r</b> son las letras que contienen mi primer y
-                            segundo
-                            nombre (Gerson Jofre) y las letras <b>a</b> y <b>y</b> las iniciales de mis apellidos
-                            (Aguedo Yanac)
-                            <br><br>
-                            Me considero una persona responsable, honesta, proactiva, creativa y analítica, siempre
-                            con ganas de pulir mis conocimientos en este maravilloso mundo del desarrollo web y con
-                            ganas de aprender nuevas tecnologías para mi crecimiento profesional
-                        </p>
 
-                        <button class="submit"><a class="download-cv" href="assets/cv_AguedoYanacGerson.pdf">Descargar
-                                CV</a></button>
-                    </div>
-                </div>
-                <footer class="footer-rights">
-                    <div class="rights">
-                        <p><i class="far fa-copyright"></i> 2021 Todos los derechos reservados</p>
-                        <p class="ubication"><i class="fas fa-map-marker-alt"></i> Av. Wilcahuain 464, Urb. La
-                            Colonia, Perú</p>
-                    </div>
 
-                </footer>
-            </div>
-            <img src="img/footer.svg" alt="" class="svg-footer">
-        </footer>
-    </div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js" async defer></script>
