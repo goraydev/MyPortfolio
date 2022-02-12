@@ -15,8 +15,8 @@
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,12 +43,28 @@
             <a href="#inicio"><img src="img/logoOficial_GorayCode_withName.svg" alt="Goraycode Gerson Aguedo Yanac"
                     class="logo"></a>
             <ul id="menu" class="options">
-                <li data-menuanchor="inicio" class="active"><a href="#inicio">Inicio</a></li>
-                <li data-menuanchor="sobre"><a href="#sobre">Sobre mí</a></li>
+                <li data-menuanchor="inicio" class="active"><a href="#home">Inicio</a></li>
+                <li data-menuanchor="sobre"><a href="#about">Sobre mí</a></li>
                 <li data-menuanchor="portfolio"><a href="#portfolio">Portfolio</a></li>
             </ul>
         </nav>
     </header>
+
+    <nav class="mobile">
+        <a class="mobile__link" href="#home">
+            <i class="fa-solid fa-house mobile__icon"></i>
+            <p class="mobile__text">inicio</p>
+        </a>
+
+        <a class="mobile__link" href="#about">
+            <i class="fa-solid fa-user mobile__icon"></i>
+            <p class="mobile__text">sobre mí</p>
+        </a>
+        <a class="mobile__link" href="#portfolio">
+            <i class="fa-solid fa-pen-ruler mobile__icon"></i>
+            <p class="mobile__text">portfolio</p>
+        </a>
+    </nav>
 
     <section class="social-media">
         <div class="box center">
@@ -67,7 +83,7 @@
         </div>
     </section>
 
-    <main class="main">
+    <main class="main" id="home">
         <div class="main__grid container">
             <section class="main__title">
                 <h1>HOLA, SOY AGUEDO YANAC GERSON</h1>
@@ -77,7 +93,7 @@
         </div>
     </main>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="about__grid container">
             <img class="about__img" src="img/about.svg" alt="">
             <div class="about__info">
