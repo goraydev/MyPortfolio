@@ -132,7 +132,7 @@ img {
 .mobile {
   position: fixed;
   bottom: 0;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(0.5rem);
@@ -168,7 +168,7 @@ img {
   animation-name: movIconMobile;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
- /*  animation-fill-mode: both; */
+  /*  animation-fill-mode: both; */
   animation-direction: alternate;
 }
 
@@ -361,7 +361,7 @@ ABOUT
 }
 
 .about__grid {
-  padding: 10rem 0;
+  padding: 10rem 0 0;
   display: grid;
   align-items: center;
   gap: 2rem;
@@ -369,8 +369,7 @@ ABOUT
 
 @media (min-width: 1200px) {
   .about__grid {
-    padding: 0;
-    height: 100vh;
+    padding: 15rem 0 0;
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -406,6 +405,10 @@ ABOUT
   padding: 1rem 0;
 }
 
+.about__text {
+  color: var(--third-color-light);
+}
+
 .about__cv {
   color: var(--third-color-light);
   background-color: var(--second-color-dark);
@@ -419,4 +422,72 @@ ABOUT
 
 .about__cv:hover {
   transform: scale(0.9);
+}
+
+/* scrolling skills */
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+.slider {
+  background: var(--third-color-light);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.slider::before,
+.slider::after {
+  background: linear-gradient(
+    to right,
+    #eff8fa 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 1;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: calc(250px * 14);
+}
+
+.slide img {
+  padding: 0.2rem 0;
+  opacity: 0.8;
+  transition: transform 500ms ease;
+}
+
+.slide img:hover{
+  opacity: 1;
+  transform: scale(1.1);
 }
