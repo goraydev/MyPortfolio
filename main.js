@@ -3,7 +3,7 @@ window.onload = function () {
     console.log("loaded");
     var typed = new Typed('#typed', {
         strings: [
-            "Front-end Developer", "-Puedes decirme Goraycode",
+            "Front-end Developer", "Puedes decirme Goraycode",
             `<i class="far fa-heart"></i>         
             <i class="fas fa-laptop-code"></i>
             <i class="far fa-heart"></i>    `],
@@ -16,16 +16,3 @@ window.onload = function () {
     });
 };
 
-/* scrolling skills */
-
-const root = document.documentElement;
-const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue(
-    "--marquee-elements-displayed"
-);
-const marqueeContent = document.querySelector("ul.marquee-content");
-
-root.style.setProperty("--marquee-elements", marqueeContent.children.length);
-
-for (let i = 0; i < marqueeElementsDisplayed; i++) {
-    marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
-}
