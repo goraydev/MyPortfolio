@@ -23,7 +23,6 @@ let identificadorTiempoDeEspera;
 document.addEventListener('DOMContentLoaded', () => {
 
     identificadorTiempoDeEspera = setTimeout(ocultarCarga, 7000);
-
 })
 
 function ocultarCarga() {
