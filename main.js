@@ -1,6 +1,5 @@
 /* Typing animation */
 window.onload = function () {
-    console.log("loaded");
     var typed = new Typed('#typed', {
         strings: [
             "Front-end Developer", "Puedes decirme Goraycode",
@@ -16,3 +15,17 @@ window.onload = function () {
     });
 };
 
+/* loading */
+
+const container = document.querySelector('.container_loading');
+let identificadorTiempoDeEspera;
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    identificadorTiempoDeEspera = setTimeout(ocultarCarga, 6000);
+
+})
+
+function ocultarCarga() {
+    container.classList.add('oculto');
+}
