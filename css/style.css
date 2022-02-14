@@ -805,3 +805,59 @@ portolio
   height: 2rem;
   object-fit: cover;
 }
+
+/*====================================================
+FOOTER
+======================================================*/
+.footer {
+  background-color: var(--second-color-dark);
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 1rem 0;
+  }
+}
+
+.footer__grid {
+  padding: 4rem 0 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .footer__grid {
+    padding: 1rem 0;
+  }
+}
+
+.social-footer {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 1200px) {
+  .social-footer {
+    display: none;
+  }
+}
+
+.social-footer__link {
+  text-decoration: none;
+}
+
+.social-footer__icon {
+  font-size: 2rem;
+  color: var(--third-color-light);
+}
+
+.footer__copyright {
+  text-align: center;
+  color: var(--third-color-light);
+}
