@@ -11,8 +11,13 @@
     <meta name="keywords"
         content="front-end developer,web,Gerson Aguedo Yanac,Gerson Aguedo,GorayCode,Reactjs,Perú,autodidacta,Aguedo Yanac,aguedo,aguedo yanac,yanac,goraycode">
     <title>Goraycode | Gerson Aguedo Yanac</title>
-    <link rel="stylesheet" href="normalize/node_modules/normalize.css/normalize.css">
-    <link href="fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,9 +27,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 
 
     <link rel="shortcut icon" href="img/logoOficial_GorayCode.svg" type="image/x-icon">
@@ -35,20 +37,49 @@
 </head>
 
 <body>
+    <div class="container_loading">
+        <div class="box">
 
-    <header>
-        <nav class="nav" id="nav">
-            <a href="#inicio"><img src="img/logoOficial_GorayCode_withName.svg" alt="Goraycode Gerson Aguedo Yanac"
+            <div class="title">
+                <span class="block"></span>
+                <h2 class="block__title">Goraycode<span></span></h2>
+            </div>
+
+            <div class="role">
+                <div class="block"></div>
+                <p class="block__text">Front-end Developer</p>
+            </div>
+        </div>
+    </div>
+
+
+    <header class="header">
+        <nav class="nav container" id="nav">
+            <a href="#home"><img src="img/logoOficial_GorayCode_withName.svg" alt="Goraycode Gerson Aguedo Yanac"
                     class="logo"></a>
             <ul id="menu" class="options">
-                <li data-menuanchor="inicio" class="active"><a href="#inicio">Inicio</a></li>
-                <li data-menuanchor="sobre"><a href="#sobre">Sobre mí</a></li>
+                <li data-menuanchor="inicio" class="active"><a href="#home">Inicio</a></li>
+                <li data-menuanchor="sobre"><a href="#about">Sobre mí</a></li>
                 <li data-menuanchor="portfolio"><a href="#portfolio">Portfolio</a></li>
-                <li data-menuanchor="contacto"><a href="#contacto">Contacto</a></li>
-                <li data-menuanchor="plus"><a href="#plus"><i class="fas fa-plus"></i></a></li>
             </ul>
         </nav>
     </header>
+
+    <nav class="mobile">
+        <a class="mobile__link" href="#home">
+            <i class="fa-solid fa-house mobile__icon"></i>
+            <p class="mobile__text">inicio</p>
+        </a>
+
+        <a class="mobile__link" href="#about">
+            <i class="fa-solid fa-user mobile__icon"></i>
+            <p class="mobile__text">sobre mí</p>
+        </a>
+        <a class="mobile__link" href="#portfolio">
+            <i class="fa-solid fa-pen-ruler mobile__icon"></i>
+            <p class="mobile__text">portfolio</p>
+        </a>
+    </nav>
 
     <section class="social-media">
         <div class="box center">
@@ -67,306 +98,272 @@
         </div>
     </section>
 
-    <div class="burger">
-        <input type="checkbox" name="" id="" class="off-canvas-btn">
-        <label for="" class="off-canvas-burger"></label>
-        <nav class="off-canvas-menu" id="slideMenu">
-            <div class="off-canvas-menu-container">
-                <a href="#inicio"><img src="img/logoOficial_GorayCode.svg" alt="Goraycode Gerson Aguedo Yanac"
-                        class="logo"></a>
-                <a href="#inicio" class="off-canvas-link">Inicio</a>
-                <a href="#sobre" class="off-canvas-link">Sobre mí</a>
-                <a href="#portfolio" class="off-canvas-link">Portfolio</a>
-                <a href="#contacto" class="off-canvas-link">Contacto</a>
-                <a class="off-canvas-link download-cv" href="assets/cv_AguedoYanacGerson.pdf">Descargar CV</a>
-                <div class="social-media-burger">
-                    <a href="https://www.instagram.com/goraycode/" target="_blank" rel="noopener noreferrer"><i
-                            class="fab fa-instagram  fa-2x"></i></a>
-                    <a href="https://twitter.com/GorayCode" target="_blank" rel="noopener noreferrer"><i
-                            class="fab fa-twitter  fa-2x"></i></a>
-                    <a href="https://www.linkedin.com/in/gerson-aguedo-yanac-aa949b1b5/" target="_blank"
-                        rel="noopener noreferrer"><i class="fab fa-linkedin-in  fa-2x"></i></a>
-                    <a href="https://github.com/goraycode" target="_blank" rel="noopener noreferrer"><i
-                            class="fab fa-github  fa-2x"></i></a>
-                </div>
-
-            </div>
-        </nav>
-    </div>
-
-
-
-    <div class="section" id="inicio">
-        <div class="container">
-            <div class="part-color">
-                <section class="welcome">
-                    <div class="contenedor">
-                        <h1>
-                            <span id="typed"></span>
-                        </h1>
-                    </div>
-                    <h2 class="occupation">Soy Front-end <br> Developer de <br> Perú</h2>
-                </section>
-            </div>
-            <div class="part-black">
-            </div>
-            <img src="img/home.svg" alt="front-end developer Gerson Aguedo Yanac GorayCode" class="img-1">
+    <main class="main" id="home">
+        <div class="main__grid container">
+            <section class="main__title">
+                <h1>HOLA, SOY AGUEDO YANAC GERSON</h1>
+                <span class="main__typed" id="typed"></span>
+            </section>
+            <img class="main__img" src="img/home.svg" alt="front-end developer Gerson Aguedo Yanac GorayCode">
         </div>
-    </div>
-    <div class="section" id="sobre">
-        <div class="container">
-            <div class="part-black">
-            </div>
-            <div class="part-white-story">
-                <section>
-                    <div class="buttons">
-                        <a href="" class="btn-active">Mi historia</a>
-                    </div>
-                    <div class="container-skills-story">
-                        <article>
+    </main>
 
-                            <p>Mi nombre es Gerson Aguedo Yanac y soy de Perú. Me apasiona el mundo de la
-                                tecnología, sobre todo el aspecto visual y el lado del cliente, por eso me enfoqué
-                                en el desarrollo front end.
-                                <br><br>
-                                Empecé en el mundo de la programación a la edad de 18 años, teniendo como primer
-                                lenguaje de
-                                programación C++, pasando por java y luego de manera autodidacta y reforzando lo
-                                aprendido
-                                en mi universidad aprendí las tecnologías web, en la que ahora quiero
-                                especializarme
-                                <br><br>
-                                He colaborado en proyectos con compañeros de mi universidad y fuera de ella,
-                                también
-                                he
-                                desarrollado sitios y aplicaciones web de manera freelance.
-
-                            </p>
-                        </article>
-                        <div class="buttons">
-                            <a href="" class="btn-active">Mis habilidades y herramientas</a>
-                        </div>
-                        <article class="skills">
-                            <div class="designer">
-                                <img src="https://img.icons8.com/color/48/000000/adobe-xd.png" class="xd" />
-                                <img src="https://img.icons8.com/color/48/000000/figma--v1.png" />
-                                <img src="https://img.icons8.com/color/48/000000/adobe-illustrator.png" />
-                                <img src="https://img.icons8.com/color/48/000000/adobe-photoshop--v2.png" />
-                            </div>
-                            <div class="web">
-                                <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" />
-                                <img src="https://img.icons8.com/color/48/000000/css3.png" />
-                                <img src="https://img.icons8.com/color/48/000000/javascript--v1.png" />
-                                <img src="https://img.icons8.com/color/48/000000/bootstrap.png" />
-                                <img src="https://img.icons8.com/color/48/000000/react-native.png" />
-                            </div>
-                            <div class="databases">
-                                <img src="https://img.icons8.com/color/50/000000/mysql-logo.png" />
-                                <img src="https://img.icons8.com/color/48/000000/microsoft-sql-server.png" />
-                            </div>
-                            <div class="tools">
-                                <img src="https://img.icons8.com/color/48/000000/git.png" />
-                                <img src="https://img.icons8.com/material-sharp/48/000000/github.png" />
-                                <img src="https://img.icons8.com/material-outlined/48/000000/notion--v1.png" />
-                            </div>
-                        </article>
-                    </div>
-                </section>
-            </div>
-
-            <img src="img/about.svg" alt="programador" class="img-2">
-        </div>
-    </div>
-    <div class="section" id="portfolio">
-        <div class="container">
-            <div class="part-color"></div>
-            <div class="part-black"></div>
-
-            <div class="carousel">
-                <h2>Proyectos grupales y freelance</h2>
-                <div class="carousel__body">
-                    <div class="carousel__prev"><i class="fas fa-chevron-left"></i></div>
-                    <div class="carousel__next"><i class="fas fa-chevron-right"></i></div>
-                    <div class="carousel__slider">
-                        <div class="carousel__slider__item">
-                            <div class="item__3d-frame">
-                                <div class="item__3d-frame__box item__3d-frame__box--front">
-                                    <div class="carousel__elemento">
-                                        <h3>Lading page de una funeraria</h3>
-                                        <hr>
-                                        <img src="img/lading_page.png" alt="Lading page de funeraria" class="img-card">
-                                        <hr>
-                                        <div class="links">
-                                            <p>Me encargué del maquetado y subirlo a producción</p>
-                                            <a href=""><img src="https://img.icons8.com/fluency/48/000000/domain.png"
-                                                    alt="sitio web" /></a>
-                                            <a href=""><img src="https://img.icons8.com/color/48/000000/github--v1.png"
-                                                    alt="github" /></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
-                                <div class="item__3d-frame__box item__3d-frame__box--right"></div>
-                            </div>
-                        </div>
-                        <div class="carousel__slider__item">
-                            <div class="item__3d-frame">
-                                <div class="item__3d-frame__box item__3d-frame__box--front">
-                                    <div class="carousel__elemento">
-                                        <h3>Galeria de danzas del Perú</h3>
-                                        <hr>
-                                        <img src="img/art_museum.png" alt="Galeria de fotos" class="img-card">
-                                        <hr>
-                                        <div class="links">
-                                            <p>Proyecto en la que expreso todo el amor a mí país</p>
-                                            <a href=""><img src="https://img.icons8.com/fluency/48/000000/domain.png"
-                                                    alt="sitio web" /></a>
-                                            <a href=""><img src="https://img.icons8.com/color/48/000000/github--v1.png"
-                                                    alt="github" /></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
-                                <div class="item__3d-frame__box item__3d-frame__box--right"></div>
-                            </div>
-                        </div>
-                        <div class="carousel__slider__item">
-                            <div class="item__3d-frame">
-                                <div class="item__3d-frame__box item__3d-frame__box--front">
-                                    <div class="carousel__elemento">
-                                        <h3>Aplicación de delivery</h3>
-                                        <hr>
-                                        <img src="img/delivery.png" alt="Lading page de funeraria" class="img-card">
-                                        <hr>
-                                        <div class="links">
-                                            <p>Me encargué de la interfaz y de las querys en MySQL</p>
-                                            <a href="https://github.com/goraycode/RestauranteSoonMarie"
-                                                target="_blank"><img
-                                                    src="https://img.icons8.com/color/48/000000/github--v1.png"
-                                                    alt="github" /></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
-                                <div class="item__3d-frame__box item__3d-frame__box--right"></div>
-                            </div>
-                        </div>
-                        <div class="carousel__slider__item">
-                            <div class="item__3d-frame">
-                                <div class="item__3d-frame__box item__3d-frame__box--front">
-                                    <div class="carousel__elemento">
-                                        <h3>Sitio web de muebleria</h3>
-                                        <hr>
-                                        <img src="img/shopping-web.png" alt="Lading page de funeraria" class="img-card">
-                                        <hr>
-                                        <div class="links">
-                                            <p>Proyecto realizado con otros compañeros</p>
-                                            <a href="https://github.com/goraycode/Proyecto-grupal---Sitio-web-de-muebler-a"
-                                                target="_blank"><img
-                                                    src="https://img.icons8.com/color/48/000000/github--v1.png"
-                                                    alt="github" /></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
-                                <div class="item__3d-frame__box item__3d-frame__box--right"></div>
-                            </div>
-                        </div>
-                        <div class="carousel__slider__item">
-                            <div class="item__3d-frame">
-                                <div class="item__3d-frame__box item__3d-frame__box--front">
-                                    <div class="carousel__elemento">
-                                        <h3>Calculadora</h3>
-                                        <hr>
-                                        <img src="img/calculator.png" alt="Lading page de funeraria" class="img-card">
-                                        <hr>
-                                        <div class="links">
-                                            <p>Proyecto realizado con HTML, CSS Y JS</p>
-                                            <a href="https://github.com/goraycode/Proyecto-grupal---Sitio-web-de-muebler-a"
-                                                target="_blank"><img
-                                                    src="https://img.icons8.com/color/48/000000/github--v1.png"
-                                                    alt="github" /></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item__3d-frame__box item__3d-frame__box--left"></div>
-                                <div class="item__3d-frame__box item__3d-frame__box--right"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="section" id="contacto">
-        <div class="container">
-            <div class="part-black">
-
-            </div>
-            <div class="part-color-contact">
-                <form action="" class="form">
-                    <h2>Contáctame</h2>
-                    <p>Comuniquese conmigo si tiene preguntas o esta considerando trabajar conmigo en algún proyecto</p>
-                    <div class="name-email">
-                        <input type="text" placeholder="Nombre">
-                        <input type="email" placeholder="Email">
-                    </div>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <input type="submit" name="" id="" class="submit showbtn" value="Enviar ahora">
-                </form>
-            </div>
-            <img src="img/contacto.svg" alt="contacto" class="img-3">
-        </div>
-    </div>
-
-
-
-    <div class="section" id="plus">
-        <footer class="container footer">
-            <div class="card-about">
-                <div class="father-card">
-                    <div class="only-card">
-                        <figure class="imagec">
-                            <img src="img/profile.jpg" alt="Gerson Aguedo Yanac Goraycode" />
-                            <figcaption>
-                                <h2>Front-end Developer</h2>
-                                <p>Goraycode - Gerson Aguedo Yanac</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="only-about">
-                        <h2>Sobre mí</h2>
-                        <p>Puedes llamarme GorayCode, esta es mi marca personal en donde reflejo mi aprecio y
-                            gratitud a mi familia, resumiendo toda mi identidad, en la que la <b>G</b> es de mi
-                            nombre Gerson, la <b>o</b> y la <b>r</b> son las letras que contienen mi primer y
-                            segundo
-                            nombre (Gerson Jofre) y las letras <b>a</b> y <b>y</b> las iniciales de mis apellidos
-                            (Aguedo Yanac)
+    <section class="about" id="about">
+        <div class="about__flex container">
+            <div class="about__grid container">
+                <img class="about__img" src="img/about.svg" alt="">
+                <div class="about__info">
+                    <div class="about__story">
+                        <h2 class="about__heading">Mi historia</h2>
+                        <p class="about__text">
+                            Mi nombre es Gerson, me apasiona el mundo de la tecnología, sobre todo el aspecto visual y
+                            el
+                            lado del cliente, por eso me enfoqué en el desarrollo front end.
                             <br><br>
-                            Me considero una persona responsable, honesta, proactiva, creativa y analítica, siempre
-                            con ganas de pulir mis conocimientos en este maravilloso mundo del desarrollo web y con
-                            ganas de aprender nuevas tecnologías para mi crecimiento profesional
-                        </p>
+                            Empecé en el mundo de la programación a la edad de 18 años, teniendo como primer lenguaje de
+                            programación C++, pasando por java y luego de manera autodidacta y reforzando lo
+                            aprendido en mi universidad aprendí las tecnologías web, en la que ahora quiero
+                            especializarme
+                            <br><br>
+                            He colaborado en proyectos con compañeros de mi universidad y fuera de ella, también he
+                            desarrollado sitios y aplicaciones web de manera freelance.
 
-                        <button class="submit"><a class="download-cv" href="assets/cv_AguedoYanacGerson.pdf">Descargar
-                                CV</a></button>
+                        </p>
+                        <a href="assets/cv_AguedoYanacGerson.pdf" target="_blank" class="about__cv">Descargar CV</a>
                     </div>
                 </div>
-                <footer class="footer-rights">
-                    <div class="rights">
-                        <p><i class="far fa-copyright"></i> 2021 Todos los derechos reservados</p>
-                        <p class="ubication"><i class="fas fa-map-marker-alt"></i> Av. Wilcahuain 464, Urb. La
-                            Colonia, Perú</p>
+            </div>
+            <div class="about__skills">
+                <h2 class="about__heading">Mis habilidades y herramientas</h2>
+                <div class="about__container">
+                    <div class="slider">
+                        <div class="slide-track">
+                            <div class="slide">
+                                <img src="img/xd.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/figma.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/photoshop.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/illustrator.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/html-5.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/css-3.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/js.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/bootstrap.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/sass.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/gulp.png" width="40" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/react.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/mysql.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/sql-server.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/git.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/github.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/notion.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/xd.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/figma.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/photoshop.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/illustrator.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/html-5.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/css-3.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/js.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/bootstrap.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/sass.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/gulp.png" width="40" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/react.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/mysql.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/sql-server.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/git.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/github.png" width="90" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="img/notion.png" width="90" alt="" />
+                            </div>
+                        </div>
                     </div>
 
-                </footer>
+                </div>
             </div>
-            <img src="img/footer.svg" alt="" class="svg-footer">
-        </footer>
-    </div>
+        </div>
+        </div>
+    </section>
 
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio__container container">
+            <h2 class="portfolio__heading">Mis últimos proyectos</h2>
+            <div class="portfolio__grid">
+                <div class="card">
+                    <img class="card__img" src="img/galeriaDanzas.jpg" alt="danzas del Perú">
+                    <div class="card__container">
+                        <p class="card__title">Galería de danzas del Perú</p>
+                        <p class="card__text">
+                            Proyecto en la que expreso todo el amor a mi país, hecho con HTML, CSS, JS, SASS Y GULP
+                        </p>
+                        <div class="card__links">
+                            <a class="card__link" href="https://galeriadedanzasdelperu.netlify.app/" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="img/website.png" alt="sitio web">
+                            </a>
+                            <a class="card__link" href="https://github.com/goraycode/Galeria-de-danzas-del-Per-"
+                                target="_blank" rel="noopener noreferrer">
+                                <img src="img/githubPortfolio.png" alt="git hub">
+                            </a>
+                        </div>
+                    </div>
+                </div> <!-- card -->
+                <div class="card">
+                    <img class="card__img" src="img/FurnizStore.jpg" alt="Furniz Store">
+                    <div class="card__container">
+                        <p class="card__title">Furniz Store</p>
+                        <p class="card__text">
+                            Lading page de una mueblería, reto que tome de un diseñador UI/UX, hecho con HTML, CSS, JS,
+                            SASS Y GULP
+                        </p>
+                        <div class="card__links">
+                            <a class="card__link" href="https://furniz.netlify.app/" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="img/website.png" alt="sitio web">
+                            </a>
+                            <a class="card__link" href="https://github.com/goraycode/Furniz-Store" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="img/githubPortfolio.png" alt="git hub">
+                            </a>
+                        </div>
+                    </div>
+                </div> <!-- card -->
+                <div class="card">
+                    <img class="card__img" src="img/frontedMentor.jpg" alt="reto front end mentor">
+                    <div class="card__container">
+                        <p class="card__title">Reto Front end Mentor</p>
+                        <p class="card__text">
+                            Reto de lading page de Front end Mentor, hecho con HTML y CSS
+                        </p>
+                        <div class="card__links">
+                            <a class="card__link" href="https://huddlelpfm.netlify.app/" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="img/website.png" alt="sitio web">
+                            </a>
+                            <a class="card__link" href="https://github.com/goraycode/retoFronTendMentor" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="img/githubPortfolio.png" alt="git hub">
+                            </a>
+                        </div>
+                    </div>
+                </div> <!-- card -->
+
+                <div class="card">
+                    <img class="card__img" src="img/MuebleriaSolis.jpg" alt="Mueblería Solis">
+                    <div class="card__container">
+                        <p class="card__title">Mueblería Solis</p>
+                        <p class="card__text">
+                            Proyecto realizado en equipo para una mueblería de la ciudad de Huaraz
+                        </p>
+                        <div class="card__links">
+                            <a class="card__link"
+                                href="https://github.com/goraycode/Proyecto-grupal---Sitio-web-de-muebler-a"
+                                target="_blank" rel="noopener noreferrer">
+                                <img src="img/githubPortfolio.png" alt="git hub">
+                            </a>
+                        </div>
+                    </div>
+                </div> <!-- card -->
+                <div class="card">
+                    <img class="card__img" src="img/aplicacionDelivery.jpg" alt="Restaurante Soon Marie">
+                    <div class="card__container">
+                        <p class="card__title">Aplicación delivery</p>
+                        <p class="card__text">
+                            Proyecto en la que me encargué de la interfaz y las queries en SQL, realizado con HTML, CSS,
+                            JS, PHP y MySQL
+                        </p>
+                        <div class="card__links">
+                            <a class="card__link" href="https://github.com/goraycode/RestauranteSoonMarie"
+                                target="_blank" rel="noopener noreferrer">
+                                <img src="img/githubPortfolio.png" alt="git hub">
+                            </a>
+                        </div>
+                    </div>
+                </div> <!-- card -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__grid container">
+            <nav class="social-footer">
+                <a class="social-footer__link" href="https://www.instagram.com/goraycode/" target="_blank">
+                    <i class="fa-brands fa-instagram social-footer__icon"></i>
+                </a>
+                <a class="social-footer__link" href="https://twitter.com/GorayCode" target="_blank">
+                    <i class="fa-brands fa-twitter social-footer__icon"></i>
+                </a>
+                <a class="social-footer__link" href="https://www.linkedin.com/in/gerson-aguedo-yanac-aa949b1b5/"
+                    target="_blank">
+                    <i class="fa-brands fa-linkedin-in social-footer__icon"></i>
+                </a>
+                <a class="social-footer__link" href="https://github.com/goraycode" target="_blank">
+                    <i class="fa-brands fa-github social-footer__icon"></i>
+                </a>
+            </nav>
+            <p class="footer__copyright">
+                copyright&copy;. Diseñado y desarrollado por Gerson Aguedo Yanac | Goraycode
+            </p>
+        </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js" async defer></script>
     <script src="main.js"></script>
