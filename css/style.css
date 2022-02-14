@@ -599,6 +599,16 @@ ABOUT
   transform: scale(0.9);
 }
 
+.about__skills {
+  padding: 5rem 0 0;
+}
+
+@media (min-width: 768px) {
+  .about__skills {
+    padding: 0;
+  }
+}
+
 /* scrolling skills */
 @-webkit-keyframes scroll {
   0% {
