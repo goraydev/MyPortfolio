@@ -20,11 +20,19 @@ window.onload = function () {
 const container = document.querySelector('.container_loading');
 let identificadorTiempoDeEspera;
 
+//El body inicial no tiene el scroll
+document.body.classList.add('withoutOverflow');
 document.addEventListener('DOMContentLoaded', () => {
 
     identificadorTiempoDeEspera = setTimeout(ocultarCarga, 7000);
+    
+    setTimeout(() => {
+        document.body.classList.remove('withoutOverflow');
+    }, 7000);
+
 })
 
 function ocultarCarga() {
+
     container.classList.add('oculto');
 }
