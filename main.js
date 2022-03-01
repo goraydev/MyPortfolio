@@ -1,3 +1,11 @@
+//actualizar precio
+
+let currentYear = new Date();
+const updateYear = document.querySelector('.footer__copyright span');
+updateYear.textContent = currentYear.getFullYear();
+
+
+
 /* Typing animation */
 window.onload = function () {
     var typed = new Typed('#typed', {
@@ -25,7 +33,7 @@ document.body.classList.add('withoutOverflow');
 document.addEventListener('DOMContentLoaded', () => {
 
     identificadorTiempoDeEspera = setTimeout(ocultarCarga, 7000);
-    
+
     setTimeout(() => {
         document.body.classList.remove('withoutOverflow');
     }, 7000);
@@ -36,3 +44,4 @@ function ocultarCarga() {
 
     container.classList.add('oculto');
 }
+
