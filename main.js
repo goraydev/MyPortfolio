@@ -1,4 +1,4 @@
-//actualizar precio
+//update copyright
 
 let currentYear = new Date();
 const updateYear = document.querySelector('.footer__copyright span');
@@ -33,15 +33,12 @@ document.body.classList.add('withoutOverflow');
 document.addEventListener('DOMContentLoaded', () => {
 
     identificadorTiempoDeEspera = setTimeout(ocultarCarga, 7000);
-
-    setTimeout(() => {
-        document.body.classList.remove('withoutOverflow');
-    }, 7000);
-
 })
 
 function ocultarCarga() {
 
+    //culmina la carga, quitamos la clase quye evita el scroll
+    document.body.classList.remove('withoutOverflow');
+
     container.classList.add('oculto');
 }
-
