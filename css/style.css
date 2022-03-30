@@ -538,12 +538,11 @@ h1 {
   margin: 2rem auto;
 }
 
-@media (min-width:1200px){
-   .about__container{
-     margin: 0.3rem auto;
-   }
+@media (min-width: 1200px) {
+  .about__container {
+    margin: 0.3rem auto;
+  }
 }
-
 
 @-webkit-keyframes scroll {
   0% {
@@ -661,6 +660,12 @@ h1 {
     grid-column: 3/4;
   }
   .card:nth-child(5) {
+    grid-column: 4/6;
+  }
+  .card:nth-child(6) {
+    grid-column: 1/4;
+  }
+  .card:nth-child(7) {
     grid-column: 4/6;
   }
 }
