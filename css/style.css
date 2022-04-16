@@ -631,17 +631,7 @@ h1 {
 }
 .portfolio__grid {
   display: grid;
-  grid-template-columns: repeat(9, 20rem);
   gap: 2rem;
-  scroll-snap-type: x mandatory;
-  overflow: hidden;
-  overflow-x: scroll;
-}
-
-@media (min-width: 768px) {
-  .portfolio__grid {
-    grid-template-columns: initial;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -656,7 +646,6 @@ h1 {
 .card {
   position: relative;
   overflow: hidden;
-  scroll-snap-align: center;
 }
 @media (min-width: 1200px) {
   .card:nth-child(1) {
@@ -801,4 +790,3 @@ h1 {
   text-align: center;
   color: var(--third-color-light);
 }
->>>>>>> newversion
