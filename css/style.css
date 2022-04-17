@@ -614,6 +614,10 @@ h1 {
 }
 .portfolio__container {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 5rem 0;
 }
 @media (min-width: 768px) {
@@ -746,6 +750,26 @@ h1 {
   height: 2rem;
   object-fit: cover;
 }
+
+.portfolio__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--third-color-light);
+  background-color: var(--second-color-dark);
+  border: none;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+.portfolio__btn:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
 .footer {
   background-color: var(--second-color-dark);
 }
