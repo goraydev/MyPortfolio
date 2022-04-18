@@ -451,21 +451,18 @@ h1 {
 }
 .main__img {
   animation-name: movImg;
-  animation-duration: 3s;
-  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-fill-mode: both;
   animation-direction: alternate;
 }
 @keyframes movImg {
-  50% {
+  0% {
     transform: translateY(-2%);
   }
-  75% {
-    transform: translateY(2%);
-  }
   100% {
-    transform: translateY(0);
+    transform: translateY(2%);
   }
 }
 @media (min-width: 1200px) {
@@ -487,8 +484,8 @@ h1 {
 }
 .about__img {
   animation-name: movImg;
-  animation-duration: 3s;
-  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-fill-mode: both;
   animation-direction: alternate;
