@@ -809,5 +809,6 @@ h1 {
 }
 .footer__copyright {
   text-align: center;
+  word-spacing: -0.2rem;
   color: var(--third-color-light);
 }
