@@ -58,6 +58,9 @@ img {
   left: 0;
   bottom: 0;
   z-index: 999;
+  animation-name: loading;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-duration: 3.5s;
 }
 .oculto {
   display: none;
@@ -86,15 +89,15 @@ img {
   display: flex;
   background: #39bed5;
   position: absolute;
-  animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation: mainBlock 1s ease-in-out forwards;
 }
 .container_loading .box .title .block__title {
   font-family: var(--type-word-web-m);
   color: #fff;
   font-size: 32px;
   opacity: 0;
-  animation: mainFadeIn 2s forwards;
-  animation-delay: 1.6s;
+  animation: mainFadeIn 0.5s forwards;
+  animation-delay: 0.65s;
   display: flex;
   align-items: baseline;
   position: relative;
@@ -104,8 +107,8 @@ img {
   height: 0;
   border-radius: 50%;
   background: #39bed5;
-  animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-  animation-delay: 2s;
+  animation: popIn 0.8s ease-in-out forwards;
+  animation-delay: 1s;
   margin-left: 5px;
   margin-top: -10px;
   position: absolute;
@@ -125,13 +128,13 @@ img {
   height: inherit;
   background: #eff8fa;
   position: absolute;
-  animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-  animation-delay: 2s;
+  animation: secBlock 1.5s ease-in-out forwards;
+  animation-delay: 1.5s;
   display: flex;
 }
 .block__text {
-  animation: secFadeIn 2s forwards;
-  animation-delay: 3.2s;
+  animation: secFadeIn 1s forwards;
+  animation-delay: 2s;
   opacity: 0;
   font-weight: 400;
   font-family: var(--type-word-web-r);
@@ -218,6 +221,19 @@ img {
     opacity: 0.5;
   }
 }
+@keyframes loading {
+  85% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 .header {
   display: none;
   background-color: rgba(0, 0, 0, 0.6);
@@ -414,7 +430,7 @@ img {
 }
 @media (min-width: 1200px) {
   .main {
-    background-image: var(--bgLinearSky);
+   
     height: 100vh;
   }
 }
@@ -465,12 +481,7 @@ h1 {
     transform: translateY(2%);
   }
 }
-@media (min-width: 1200px) {
-  .about {
-    background-image: var(--bgLinearChange);
-    height: 100vh;
-  }
-}
+
 .about__grid {
   padding: 8rem 0 0;
   display: grid;
@@ -605,11 +616,7 @@ h1 {
   opacity: 1;
   transform: scale(1.1);
 }
-@media (min-width: 1200px) {
-  .portfolio {
-    background-image: var(--bgLinearSky);
-  }
-}
+
 .portfolio__container {
   position: relative;
   display: flex;

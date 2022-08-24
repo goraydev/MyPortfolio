@@ -11,14 +11,12 @@ window.onload = function () {
     var typed = new Typed('#typed', {
         strings: [
             "Front-end Developer", "Puedes decirme Goraycode",
-            `<i class="far fa-heart"></i>         
-            <i class="fas fa-laptop-code"></i>
-            <i class="far fa-heart"></i>    `],
-        backSpeed: 100,
+        ],
+        backSpeed: 50,
         smartBackspace: true,
-        backDelay: 1500,
+        backDelay: 1000,
         startDelay: 100,
-        typeSpeed: 80,
+        typeSpeed: 50,
         loop: true,
     });
 };
@@ -36,7 +34,7 @@ const projects = document.querySelector('.portfolio__grid');
 document.body.classList.add('withoutOverflow');
 document.addEventListener('DOMContentLoaded', () => {
 
-    identificadorTiempoDeEspera = setTimeout(ocultarCarga, 7000);
+    identificadorTiempoDeEspera = setTimeout(ocultarCarga, 3250);
     projectsOcultos();
 })
 
