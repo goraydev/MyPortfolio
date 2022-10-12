@@ -3,8 +3,95 @@
 let currentYear = new Date();
 const updateYear = document.querySelector('.footer__copyright span');
 updateYear.textContent = currentYear.getFullYear();
+let portfolio__grid = document.querySelector(".portfolio__grid");
+
+async function getAPI() {
+    const url = "./assets/projects.json";
+    const data = await fetch(url);
+    const response = await data.json();
+    console.log(response);
+    createCard(response);
+
+}
+
+function createCard(results) {
+    results.forEach(result => {
+        const { avif, jpg, repo, text, title, webp, website } = result;
+
+        const card = document.createElement("div");
+        card.classList = 'card';
 
 
+        const picture = document.createElement("picture");
+        const sourceAvif = document.createElement("source");
+        sourceAvif.srcset = `${avif}`;
+        sourceAvif.classList = 'card__img';
+        sourceAvif.type = 'image/avif';
+        const sourceWebp = document.createElement("source");
+        sourceWebp.srcset = `${webp}`;
+        sourceWebp.classList = 'card__img';
+        sourceWebp.type = 'image/webp';
+        const img = document.createElement("img");
+        img.classList = 'card__img';
+        img.loading = 'lazy';
+        img.src = `${jpg}`;
+        img.alt = `${title}`;
+
+        picture.appendChild(sourceAvif);
+        picture.appendChild(sourceWebp);
+        picture.appendChild(img);
+
+
+        const cardContainer = document.createElement("div");
+        cardContainer.classList = 'card__container';
+
+        const pTitle = document.createElement("p");
+        pTitle.classList = 'card__title';
+        pTitle.textContent = `${title}`;
+        const pText = document.createElement("p");
+        pText.classList = 'card__text';
+        pText.textContent = `${text}`;
+
+        const cardLinks = document.createElement("div");
+        cardLinks.classList = 'card__links';
+
+        const linkWeb = document.createElement("a");
+        linkWeb.classList = 'card__link';
+        linkWeb.href = `${website}`;
+        linkWeb.target = '_blank';
+        linkWeb.rel = 'noopener noreferrer';
+        const imgWeb = document.createElement("img");
+        imgWeb.src = '/img/website.png';
+        imgWeb.alt = 'sitio web';
+        linkWeb.appendChild(imgWeb);
+
+        const linkRepo = document.createElement("a");
+        linkRepo.classList = 'card__link';
+        linkRepo.href = `${repo}`;
+        linkRepo.target = '_blank';
+        linkRepo.rel = 'noopener noreferrer';
+        const imgRepo = document.createElement("img");
+        imgRepo.src = '/img/github.png';
+        imgRepo.alt = 'sitio web';
+        linkRepo.appendChild(imgRepo);
+
+        cardLinks.appendChild(linkWeb);
+        cardLinks.appendChild(linkRepo);
+
+
+        cardContainer.appendChild(pTitle);
+        cardContainer.appendChild(pText);
+        cardContainer.appendChild(cardLinks);
+
+
+        card.appendChild(picture);
+        card.appendChild(cardContainer);
+
+        portfolio__grid.appendChild(card);
+    });
+
+
+}
 
 /* Typing animation */
 window.onload = function () {
@@ -58,8 +145,6 @@ function projectsOcultos() {
 
 
 const btnMostrarOcultar = document.querySelector('.portfolio__btn');
-btnMostrarOcultar.addEventListener('click', mostrarOcultar);
-
 
 function mostrarOcultar() {
     let oculto;
@@ -73,3 +158,10 @@ function mostrarOcultar() {
     btnMostrarOcultar.textContent = oculto ? 'Ver más' : 'Ver menos';
 
 }
+btnMostrarOcultar.addEventListener('click', mostrarOcultar);
+
+
+
+
+//events
+getAPI();
