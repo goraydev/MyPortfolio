@@ -1,0 +1,83 @@
+[
+  {
+    "webp": "/img/galeriaDanzas.webp",
+    "avif": "/img/galeriaDanzas.avif",
+    "jpg": "/img/galeriaDanzas.jpg",
+    "title": "Galería de danzas del Perú",
+    "text": "Proyecto en la que expreso todo el amor a mi país, hecho con HTML, CSS, JS, SASS Y GULP",
+    "website": "https://galeriadedanzasdelperu.netlify.app/",
+    "repo": "https://github.com/goraycode/Galeria-de-danzas-del-Per-"
+  },
+  {
+    "webp": "/img/generadorMemes.webp",
+    "avif": "/img/generadorMemes.avif",
+    "jpg": "/img/generadorMemes.jpg",
+    "title": "Generador de memes",
+    "text": "  Proyecto en la que puedes generar tu propio meme a partir de la selección de una imagen y el completado del formulario. Haciendo uso de fetch API",
+    "website": "https://generadormemesfetchapi.netlify.app/",
+    "repo": "https://github.com/goraycode/generadorMemes"
+  },
+  {
+    "webp": "/img/todo.webp",
+    "avif": "/img/todo.avif",
+    "jpg": "/img/todo.jpg",
+    "title": "Todo App",
+    "text": "Proyecto realizado con React y TailwindCss",
+    "website": "https://todoapp-react-tailwincss.netlify.app/",
+    "repo": "https://github.com/goraycode/TodoApp"
+  },
+  {
+    "webp": "/img/MuebleriaSolis.webp",
+    "avif": "/img/MuebleriaSolis.avif",
+    "jpg": "/img/MuebleriaSolis.jpg",
+    "title": "Mueblería Solis",
+    "text": " Proyecto realizado en equipo para una mueblería de la ciudad de Huaraz",
+    "website": "",
+    "repo": "https://github.com/goraycode/Proyecto-grupal---Sitio-web-de-muebler-a"
+  },
+  {
+    "webp": "/img/aplicacionDelivery.webp",
+    "avif": "/img/aplicacionDelivery.avif",
+    "jpg": "/img/aplicacionDelivery.jpg",
+    "title": "Aplicación delivery",
+    "text": " Proyecto en la que me encargué de la interfaz y las queries en SQL, realizado con HTML, CSS, JS, PHP y MySQL",
+    "website": "",
+    "repo": "https://github.com/goraycode/RestauranteSoonMarie"
+  },
+  {
+    "webp": "/img/storeGames.webp",
+    "avif": "/img/storeGames.avif",
+    "jpg": "/img/storeGames.jpg",
+    "title": "Tienda de videojuegos",
+    "text": "Proyecto de simulación de una tienda virtual realizado con HTML, CSS, JS, haciendo uso de LocalStorage",
+    "website": "https://storegames.netlify.app/",
+    "repo": "https://github.com/goraycode/CarritoDeCompras"
+  },
+  {
+    "webp": "/img/gastoSemanal.webp",
+    "avif": "/img/gastoSemanal.avif",
+    "jpg": "/img/gastoSemanal.jpg",
+    "title": "Gestor de gastos",
+    "text": "  Proyecto que permite gestionar los gastos en base a su realizado con HTML, CSS, JS, haciendo uso de LocalStorage",
+    "website": "https://gestiondegastos.netlify.app/",
+    "repo": "https://github.com/goraycode/gastoSemanal"
+  },
+  {
+    "webp": "/img/covid.webp",
+    "avif": "/img/covid.avif",
+    "jpg": "/img/covid.jpg",
+    "title": "Covid 19 statistics",
+    "text": "Proyecto en la que puedes obtener datos sobre casos, muertes y pruebas totales de un pais hasta la fecha ingresada",
+    "website": "https://statisticsofcovid19.netlify.app/",
+    "repo": "https://github.com/goraycode/Statistics-of-Covid19"
+  },
+  {
+    "webp": "/img/gifExpert.webp",
+    "avif": "/img/gifExpert.avif",
+    "jpg": "/img/gifExpert.jpg",
+    "title": "GifExpert App",
+    "text": "  Proyecto desarrollado con React en la que puedes buscar y elegir la cantidad de gifs y utilizarlos como gustes",
+    "website": "https://app-gifs-expert.netlify.app/",
+    "repo": "https://github.com/goraycode/Gif-expert-app"
+  }
+]
