@@ -544,6 +544,7 @@ h1 {
   height: 5rem;
   width: auto;
   z-index: 9;
+  
   transition: transform 0.5s;
 }
 .slide img:hover {

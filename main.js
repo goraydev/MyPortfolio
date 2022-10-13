@@ -9,7 +9,6 @@ async function getAPI() {
     const url = "./assets/projects.json";
     const data = await fetch(url);
     const response = await data.json();
-    console.log(response);
     createCard(response);
 
 }
