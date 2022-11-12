@@ -1,9 +1,24 @@
-//update copyright
-
-let currentYear = new Date();
 const updateYear = document.querySelector('.footer__copyright span');
-updateYear.textContent = currentYear.getFullYear();
+updateYear.textContent = (new Date()).getFullYear();
+
 let portfolio__grid = document.querySelector(".portfolio__grid");
+const btnMostrarOcultar = document.querySelector('.portfolio__btn');
+
+/* loading */
+const container = document.querySelector('.container_loading');
+let identificadorTiempoDeEspera;
+
+/* projects */
+const projects = document.querySelector('.portfolio__grid');
+
+
+
+//El body inicial no tiene el scroll
+document.body.classList.add('withoutOverflow');
+document.addEventListener('DOMContentLoaded', () => {
+
+    identificadorTiempoDeEspera = setTimeout(ocultarCarga, 3250);
+})
 
 async function getAPI() {
     const url = "./assets/projects.json";
@@ -107,33 +122,17 @@ window.onload = function () {
     });
 };
 
-/* loading */
-
-const container = document.querySelector('.container_loading');
-let identificadorTiempoDeEspera;
-
-
-/* projects */
-const projects = document.querySelector('.portfolio__grid');
-
-//El body inicial no tiene el scroll
-document.body.classList.add('withoutOverflow');
-document.addEventListener('DOMContentLoaded', () => {
-
-    identificadorTiempoDeEspera = setTimeout(ocultarCarga, 3250);
-    projectsOcultos();
-})
-
 function ocultarCarga() {
 
-    //culmina la carga, quitamos la clase quye evita el scroll
+    //culmina la carga, quitamos la clase que evita el scroll
     document.body.classList.remove('withoutOverflow');
 
     container.classList.add('oculto');
+    projectsOcultos();
 }
 
-
 function projectsOcultos() {
+
     for (let i = 0; i < projects.children.length; i++) {
         if (i > 4) {
             projects.children[i].classList.add('oculto');
@@ -141,9 +140,6 @@ function projectsOcultos() {
 
     }
 }
-
-
-const btnMostrarOcultar = document.querySelector('.portfolio__btn');
 
 function mostrarOcultar() {
     let oculto;
@@ -157,10 +153,7 @@ function mostrarOcultar() {
     btnMostrarOcultar.textContent = oculto ? 'Ver más' : 'Ver menos';
 
 }
-btnMostrarOcultar.addEventListener('click', mostrarOcultar);
-
-
-
 
 //events
+btnMostrarOcultar.addEventListener('click', mostrarOcultar);
 getAPI();
