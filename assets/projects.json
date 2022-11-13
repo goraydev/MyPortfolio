@@ -18,13 +18,13 @@
     "repo": "https://github.com/goraycode/generadorMemes"
   },
   {
-    "webp": "/img/todo.webp",
-    "avif": "/img/todo.avif",
-    "jpg": "/img/todo.jpg",
-    "title": "Todo App",
-    "text": "Proyecto realizado con React y TailwindCss",
-    "website": "https://todoapp-react-tailwincss.netlify.app/",
-    "repo": "https://github.com/goraycode/TodoApp"
+    "webp": "/img/searchallsongs.webp",
+    "avif": "/img/searchallsongs.avif",
+    "jpg": "/img/searchallsongs.jpg",
+    "title": "Search All Songs",
+    "text": "Proyecto de búsqueda de canciones con reconocimientos de voz",
+    "website": "https://searchallsongs.netlify.app/",
+    "repo": "https://github.com/goraycode/SearchAllSongs"
   },
   {
     "webp": "/img/MuebleriaSolis.webp",
