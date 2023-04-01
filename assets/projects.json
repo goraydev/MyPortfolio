@@ -27,6 +27,15 @@
     "repo": "https://github.com/goraycode/SearchAllSongs"
   },
   {
+    "webp": "/img/aplicacionDelivery.webp",
+    "avif": "/img/aplicacionDelivery.avif",
+    "jpg": "/img/aplicacionDelivery.jpg",
+    "title": "Aplicación delivery",
+    "text": "Proyecto en la que me encargué de la interfaz y las queries en SQL",
+    "website": "",
+    "repo": "https://github.com/goraycode/RestauranteSoonMarie"
+  },
+  {
     "webp": "/img/calendar.webp",
     "avif": "/img/calendar.avif",
     "jpg": "/img/calendar.jpg",
@@ -35,15 +44,7 @@
     "website": "https://mern-calendar-front.netlify.app/",
     "repo": "https://github.com/goraydev/mern-calendar-fronted"
   },
-  {
-    "webp": "/img/aplicacionDelivery.webp",
-    "avif": "/img/aplicacionDelivery.avif",
-    "jpg": "/img/aplicacionDelivery.jpg",
-    "title": "Aplicación delivery",
-    "text": " Proyecto en la que me encargué de la interfaz y las queries en SQL, realizado con HTML, CSS, JS, PHP y MySQL",
-    "website": "",
-    "repo": "https://github.com/goraycode/RestauranteSoonMarie"
-  },
+
   {
     "webp": "/img/storeGames.webp",
     "avif": "/img/storeGames.avif",
