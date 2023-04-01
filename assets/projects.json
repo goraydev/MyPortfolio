@@ -27,13 +27,13 @@
     "repo": "https://github.com/goraycode/SearchAllSongs"
   },
   {
-    "webp": "/img/MuebleriaSolis.webp",
-    "avif": "/img/MuebleriaSolis.avif",
-    "jpg": "/img/MuebleriaSolis.jpg",
-    "title": "Mueblería Solis",
-    "text": " Proyecto realizado en equipo para una mueblería de la ciudad de Huaraz",
-    "website": "",
-    "repo": "https://github.com/goraycode/Proyecto-grupal---Sitio-web-de-muebler-a"
+    "webp": "/img/calendar.webp",
+    "avif": "/img/calendar.avif",
+    "jpg": "/img/calendar.jpg",
+    "title": "Calendar App",
+    "text": "Proyecto desarrollador con el Stack MERN",
+    "website": "https://mern-calendar-front.netlify.app/",
+    "repo": "https://github.com/goraydev/mern-calendar-fronted"
   },
   {
     "webp": "/img/aplicacionDelivery.webp",
