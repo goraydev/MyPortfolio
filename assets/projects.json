@@ -4,18 +4,18 @@
     "avif": "/img/galeriaDanzas.avif",
     "jpg": "/img/galeriaDanzas.jpg",
     "title": "Galería de danzas del Perú",
-    "text": "Proyecto en la que expreso todo el amor a mi país, hecho con HTML, CSS, JS, SASS Y GULP",
+    "text": "Proyecto desarrollado con HTML, CSS, JS, SASS Y GULP",
     "website": "https://galeriadedanzasdelperu.netlify.app/",
     "repo": "https://github.com/goraycode/Galeria-de-danzas-del-Per-"
   },
   {
-    "webp": "/img/generadorMemes.webp",
-    "avif": "/img/generadorMemes.avif",
-    "jpg": "/img/generadorMemes.jpg",
-    "title": "Generador de memes",
-    "text": "  Proyecto en la que puedes generar tu propio meme a partir de la selección de una imagen y el completado del formulario. Haciendo uso de fetch API",
-    "website": "https://generadormemesfetchapi.netlify.app/",
-    "repo": "https://github.com/goraycode/generadorMemes"
+    "webp": "/img/bibliotecaestudiantil.webp",
+    "avif": "/img/bibliotecaestudiantil.avif",
+    "jpg": "/img/bibliotecaestudiantil.png",
+    "title": "Gestor de biblioteca estudiantil",
+    "text": "Proyecto para gestionar la biblioteca de una institución educativa, desarrollado con React y Material UI",
+    "website": "",
+    "repo": "https://github.com/goraydev/bookmanager"
   },
   {
     "webp": "/img/searchallsongs.webp",
@@ -31,7 +31,7 @@
     "avif": "/img/aplicacionDelivery.avif",
     "jpg": "/img/aplicacionDelivery.jpg",
     "title": "Aplicación delivery",
-    "text": "Proyecto en la que me encargué de la interfaz y las queries en SQL",
+    "text": "Proyecto en el que asumí la responsabilidad del desarrollo fullstack",
     "website": "",
     "repo": "https://github.com/goraycode/RestauranteSoonMarie"
   },
@@ -46,13 +46,13 @@
   },
 
   {
-    "webp": "/img/storeGames.webp",
-    "avif": "/img/storeGames.avif",
-    "jpg": "/img/storeGames.jpg",
-    "title": "Tienda de videojuegos",
-    "text": "Proyecto de simulación de una tienda virtual realizado con HTML, CSS, JS, haciendo uso de LocalStorage",
-    "website": "https://storegames.netlify.app/",
-    "repo": "https://github.com/goraycode/CarritoDeCompras"
+    "webp": "/img/fauxmart.webp",
+    "avif": "/img/fauxmart.avif",
+    "jpg": "/img/fauxmart.png",
+    "title": "E-Commerce con Stripe y Firebase",
+    "text": "Desarrollado con React, Nodejs para backend, Stripe para pagos y autenticación con Firebase",
+    "website": "https://fauxmart.netlify.app/",
+    "repo": "https://github.com/goraydev/Fake-Store"
   },
   {
     "webp": "/img/gastoSemanal.webp",
@@ -64,14 +64,15 @@
     "repo": "https://github.com/goraycode/gastoSemanal"
   },
   {
-    "webp": "/img/covid.webp",
-    "avif": "/img/covid.avif",
-    "jpg": "/img/covid.jpg",
-    "title": "Covid 19 statistics",
-    "text": "Proyecto en la que puedes obtener datos sobre casos, muertes y pruebas totales de un pais hasta la fecha ingresada",
-    "website": "https://statisticsofcovid19.netlify.app/",
-    "repo": "https://github.com/goraycode/Statistics-of-Covid19"
+    "webp": "/img/generadorMemes.webp",
+    "avif": "/img/generadorMemes.avif",
+    "jpg": "/img/generadorMemes.jpg",
+    "title": "Generador de memes",
+    "text": "  Proyecto en la que puedes generar tu propio meme a partir de la selección de una imagen y el completado del formulario",
+    "website": "https://generadormemesfetchapi.netlify.app/",
+    "repo": "https://github.com/goraycode/generadorMemes"
   },
+
   {
     "webp": "/img/gifExpert.webp",
     "avif": "/img/gifExpert.avif",
