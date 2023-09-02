@@ -74,12 +74,12 @@
   },
 
   {
-    "webp": "/img/gifExpert.webp",
-    "avif": "/img/gifExpert.avif",
-    "jpg": "/img/gifExpert.jpg",
-    "title": "GifExpert App",
-    "text": "  Proyecto desarrollado con React en la que puedes buscar y elegir la cantidad de gifs y utilizarlos como gustes",
-    "website": "https://app-gifs-expert.netlify.app/",
-    "repo": "https://github.com/goraycode/Gif-expert-app"
+    "webp": "/img/gymunasam.webp",
+    "avif": "/img/gymunasam.avif",
+    "jpg": "/img/gymunasam.png",
+    "title": "GYM-APP UNASAM",
+    "text": "Proyecto desarrollado con Laravel en la que se inscribe, registra asistencia, mide el progreso de los alumnos y se brindan reportes generales",
+    "website": "",
+    "repo": "https://github.com/goraydev/GYM-APP"
   }
 ]
