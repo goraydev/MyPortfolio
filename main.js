@@ -25,7 +25,6 @@ async function getAPI() {
     const data = await fetch(url);
     const response = await data.json();
     createCard(response);
-
 }
 
 function createCard(results) {
@@ -89,7 +88,10 @@ function createCard(results) {
         imgRepo.alt = 'sitio web';
         linkRepo.appendChild(imgRepo);
 
-        cardLinks.appendChild(linkWeb);
+        if (website !== "") {
+
+            cardLinks.appendChild(linkWeb);
+        }
         cardLinks.appendChild(linkRepo);
 
 
