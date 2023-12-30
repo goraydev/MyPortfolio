@@ -44,6 +44,15 @@
     "website": "https://mern-calendar-front.netlify.app/",
     "repo": "https://github.com/goraydev/mern-calendar-fronted"
   },
+  {
+    "webp": "/img/gymunasam.webp",
+    "avif": "/img/gymunasam.avif",
+    "jpg": "/img/gymunasam.png",
+    "title": "GYM-APP UNASAM",
+    "text": "Proyecto desarrollado con Laravel en la que se inscribe, registra asistencia, mide el progreso de los alumnos y se brindan reportes generales",
+    "website": "",
+    "repo": "https://github.com/goraydev/GYM-APP"
+  },
 
   {
     "webp": "/img/fauxmart.webp",
@@ -55,31 +64,21 @@
     "repo": "https://github.com/goraydev/Fake-Store"
   },
   {
-    "webp": "/img/gastoSemanal.webp",
-    "avif": "/img/gastoSemanal.avif",
-    "jpg": "/img/gastoSemanal.jpg",
-    "title": "Gestor de gastos",
-    "text": "  Proyecto que permite gestionar los gastos en base a su realizado con HTML, CSS, JS, haciendo uso de LocalStorage",
-    "website": "https://gestiondegastos.netlify.app/",
-    "repo": "https://github.com/goraycode/gastoSemanal"
+    "webp": "/img/contactoMAascota.webp",
+    "avif": "/img/contactoMascota.avif",
+    "jpg": "/img/contactoMascota.png",
+    "title": "Contacto Mascota",
+    "text": "Aplicación web dedicada a exhibir datos acerca de mascotas que han sido encontradas",
+    "website": "https://c15-22-m-java-react.vercel.app/",
+    "repo": "https://github.com/No-Country/c15-22-m-java-react"
   },
   {
     "webp": "/img/generadorMemes.webp",
     "avif": "/img/generadorMemes.avif",
     "jpg": "/img/generadorMemes.jpg",
     "title": "Generador de memes",
-    "text": "  Proyecto en la que puedes generar tu propio meme a partir de la selección de una imagen y el completado del formulario",
+    "text": "Proyecto que te permite crear tu propio meme personalizado mediante la elección de una imagen y el llenado de un formulario",
     "website": "https://generadormemesfetchapi.netlify.app/",
     "repo": "https://github.com/goraycode/generadorMemes"
-  },
-
-  {
-    "webp": "/img/gifExpert.webp",
-    "avif": "/img/gifExpert.avif",
-    "jpg": "/img/gifExpert.jpg",
-    "title": "GifExpert App",
-    "text": "  Proyecto desarrollado con React en la que puedes buscar y elegir la cantidad de gifs y utilizarlos como gustes",
-    "website": "https://app-gifs-expert.netlify.app/",
-    "repo": "https://github.com/goraycode/Gif-expert-app"
   }
 ]
