@@ -123,7 +123,7 @@ function createCard(results) {
 window.onload = function () {
     var typed = new Typed('#typed', {
         strings: [
-            "Front-end Developer", "Puedes decirme Goraydev",
+            "Desarrollador Web", "Puedes decirme Goraydev",
         ],
         backSpeed: 50,
         smartBackspace: true,
