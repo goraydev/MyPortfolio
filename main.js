@@ -52,9 +52,9 @@ function createCard(results) {
         img.classList = 'card__img';
         img.loading = 'lazy';
         img.src = `${jpg}`;
-        img.alt = `${title}`;
         img.width = '300';
         img.height = '300';
+        img.alt = `${title}`;
 
         picture.appendChild(sourceAvif);
         picture.appendChild(sourceWebp);
