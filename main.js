@@ -40,15 +40,21 @@ function createCard(results) {
         sourceAvif.srcset = `${avif}`;
         sourceAvif.classList = 'card__img';
         sourceAvif.type = 'image/avif';
+        sourceAvif.width = '300';
+        sourceAvif.height = '300';
         const sourceWebp = document.createElement("source");
         sourceWebp.srcset = `${webp}`;
         sourceWebp.classList = 'card__img';
         sourceWebp.type = 'image/webp';
+        sourceWebp.width = '300';
+        sourceWebp.height = '300';
         const img = document.createElement("img");
         img.classList = 'card__img';
         img.loading = 'lazy';
         img.src = `${jpg}`;
         img.alt = `${title}`;
+        img.width = '300';
+        img.height = '300';
 
         picture.appendChild(sourceAvif);
         picture.appendChild(sourceWebp);
@@ -74,8 +80,10 @@ function createCard(results) {
         linkWeb.target = '_blank';
         linkWeb.rel = 'noopener noreferrer';
         const imgWeb = document.createElement("img");
-        imgWeb.src = '/img/website.png';
+        imgWeb.src = '/img/TablerWorld.svg';
         imgWeb.alt = 'sitio web';
+        imgWeb.width = "100";
+        imgWeb.height = "100";
         linkWeb.appendChild(imgWeb);
 
         const linkRepo = document.createElement("a");
@@ -84,8 +92,10 @@ function createCard(results) {
         linkRepo.target = '_blank';
         linkRepo.rel = 'noopener noreferrer';
         const imgRepo = document.createElement("img");
-        imgRepo.src = '/img/github.png';
+        imgRepo.src = '/img/github.svg';
         imgRepo.alt = 'sitio web';
+        imgRepo.width = "100";
+        imgRepo.height = "100";
         linkRepo.appendChild(imgRepo);
 
         if (website !== "") {
