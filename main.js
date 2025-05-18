@@ -98,11 +98,14 @@ function createCard(results) {
         imgRepo.height = "100";
         linkRepo.appendChild(imgRepo);
 
+
         if (website !== "") {
 
             cardLinks.appendChild(linkWeb);
         }
-        cardLinks.appendChild(linkRepo);
+        if (repo !== "") {
+            cardLinks.appendChild(linkRepo);
+        }
 
 
         cardContainer.appendChild(pTitle);

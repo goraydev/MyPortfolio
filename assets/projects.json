@@ -64,13 +64,13 @@
     "repo": "https://github.com/goraydev/Fake-Store"
   },
   {
-    "webp": "/img/contactoMAascota.webp",
-    "avif": "/img/contactoMascota.avif",
-    "jpg": "/img/contactoMascota.png",
-    "title": "Contacto Mascota",
-    "text": "Aplicación web dedicada a exhibir datos acerca de mascotas que han sido encontradas",
-    "website": "https://c15-22-m-java-react.vercel.app/",
-    "repo": "https://github.com/No-Country/c15-22-m-java-react"
+    "webp": "/img/eduvalora.webp",
+    "avif": "/img/eduvalora.avif",
+    "jpg": "/img/eduvalora.png",
+    "title": "Eduvalora",
+    "text": "Aplicación web para compartir experiencias y opiniones sobre los docentes de la UNASAM, desarrollada con React, Nodejs y PostgreSQL",
+    "website": "https://eduvalora-frontend.vercel.app/",
+    "repo": ""
   },
   {
     "webp": "/img/generadorMemes.webp",
