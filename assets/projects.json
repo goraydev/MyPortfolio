@@ -9,14 +9,15 @@
     "repo": "https://github.com/goraycode/Galeria-de-danzas-del-Per-"
   },
   {
-    "webp": "/img/bibliotecaestudiantil.webp",
-    "avif": "/img/bibliotecaestudiantil.avif",
-    "jpg": "/img/bibliotecaestudiantil.png",
-    "title": "Gestor de biblioteca estudiantil",
-    "text": "Proyecto para gestionar la biblioteca de una institución educativa, desarrollado con React y Material UI",
-    "website": "",
-    "repo": "https://github.com/goraydev/bookmanager"
+    "webp": "/img/eduvalora.webp",
+    "avif": "/img/eduvalora.avif",
+    "jpg": "/img/eduvalora.png",
+    "title": "Eduvalora",
+    "text": "Aplicación web para compartir experiencias y opiniones sobre los docentes de la UNASAM, desarrollada con React, Nodejs y PostgreSQL",
+    "website": "https://eduvalora-frontend.vercel.app/",
+    "repo": ""
   },
+
   {
     "webp": "/img/searchallsongs.webp",
     "avif": "/img/searchallsongs.avif",
@@ -48,9 +49,9 @@
     "webp": "/img/gymunasam.webp",
     "avif": "/img/gymunasam.avif",
     "jpg": "/img/gymunasam.png",
-    "title": "GYM-APP UNASAM",
-    "text": "Proyecto desarrollado con Laravel en la que se inscribe, registra asistencia, mide el progreso de los alumnos y se brindan reportes generales",
-    "website": "",
+    "title": "Sistema web Bienestar Universitario UNASAM",
+    "text": "Proyecto desarrollado con Laravel en la que brindan información sobre los servicios de bienestar de la UNASAM y permite gestionar inscripciones y reservas de actividades deportivas",
+    "website": "https://bienestaruniversitario.unasam.edu.pe/",
     "repo": "https://github.com/goraydev/GYM-APP"
   },
 
@@ -64,21 +65,21 @@
     "repo": "https://github.com/goraydev/Fake-Store"
   },
   {
-    "webp": "/img/eduvalora.webp",
-    "avif": "/img/eduvalora.avif",
-    "jpg": "/img/eduvalora.png",
-    "title": "Eduvalora",
-    "text": "Aplicación web para compartir experiencias y opiniones sobre los docentes de la UNASAM, desarrollada con React, Nodejs y PostgreSQL",
-    "website": "https://eduvalora-frontend.vercel.app/",
-    "repo": ""
+    "webp": "/img/bibliotecaestudiantil.webp",
+    "avif": "/img/bibliotecaestudiantil.avif",
+    "jpg": "/img/bibliotecaestudiantil.png",
+    "title": "Gestor de biblioteca estudiantil",
+    "text": "Proyecto para gestionar la biblioteca de una institución educativa, desarrollado con React y Material UI",
+    "website": "",
+    "repo": "https://github.com/goraydev/bookmanager"
   },
   {
-    "webp": "/img/generadorMemes.webp",
-    "avif": "/img/generadorMemes.avif",
-    "jpg": "/img/generadorMemes.jpg",
-    "title": "Generador de memes",
-    "text": "Proyecto que te permite crear tu propio meme personalizado mediante la elección de una imagen y el llenado de un formulario",
-    "website": "https://generadormemesfetchapi.netlify.app/",
-    "repo": "https://github.com/goraycode/generadorMemes"
+    "webp": "/img/grafictotal.webp",
+    "avif": "/img/grafictotal.avif",
+    "jpg": "/img/grafictotal.jpg",
+    "title": "Grafictotal",
+    "text": "Sitio web corporativo desarrollado con HTML, CSS y JavaScript para una empresa de diseño gráfico e impresión",
+    "website": "https://www.grafictotal.net.pe/",
+    "repo": "https://github.com/goraydev/grafictotal"
   }
 ]
